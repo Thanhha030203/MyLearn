@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74a3a49f-3521-41f1-b86d-f803ff05ef96">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MaNH" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from HocVien where MaNH = $P{MaNH}]]>
+	</queryString>
+	<field name="MaHV" class="java.lang.Integer"/>
+	<field name="MaKH" class="java.lang.Integer"/>
+	<field name="MaNH" class="java.lang.String"/>
+	<field name="Diem" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Immediate">
+			<staticText>
+				<reportElement x="51" y="24" width="439" height="55" forecolor="#0000FF" uuid="6e546184-5e05-46a8-ab8a-459b8bb4d53a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BẢNG ĐIỂM HỌC VIÊN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="308" y="15" width="100" height="20" uuid="013ad2a7-ff38-4130-a0b1-afac644c8f0a"/>
+				<textFieldExpression><![CDATA[$F{MaHV}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="174" y="15" width="100" height="20" uuid="a07f2d18-ae22-485f-8c5e-d858f75b86b5"/>
+				<text><![CDATA[MÃ học viên ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="0" width="100" height="20" uuid="3a9b5a88-db8c-42ea-8dca-847bb84a17a1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã người học]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="0" width="100" height="20" uuid="0e6f5bfc-046c-4afb-b1b5-52ab6d48cbb0"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã khoá học]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="0" width="100" height="20" uuid="d15b471c-34ee-4439-956c-6ff09f349782"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diểm]]></text>
+			</staticText>
+			<line>
+				<reportElement x="15" y="60" width="426" height="1" uuid="1ada2531-473c-4086-ac26-b1ee71788a28"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="15" y="0" width="100" height="20" uuid="a0506a3a-afda-4948-a1e9-3232c17409f6"/>
+				<textFieldExpression><![CDATA[$F{MaNH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="0" width="100" height="20" uuid="4537640e-049d-40ab-8132-10a58d2d1334"/>
+				<textFieldExpression><![CDATA[$F{MaKH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="100" height="20" uuid="932d49d6-11a0-4338-a36b-19f2ac7b39d5"/>
+				<textFieldExpression><![CDATA[$F{Diem}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

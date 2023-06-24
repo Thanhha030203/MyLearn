@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="activation.jar"/>
+	<classpathentry kind="lib" path="dist/lib/activation.jar"/>
+	<classpathentry kind="lib" path="dist/lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mssql-jdbc-9.4.1.jre11.jar"/>
+	<classpathentry kind="lib" path="dist/QuanLyNhaTro_Nhom5.jar"/>
+	<classpathentry kind="lib" path="javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="mssql-jdbc-9.4.1.jre11.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

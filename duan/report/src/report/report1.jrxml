@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ac94b8f8-af1b-4f47-8a5d-e4fab8090381">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MaHV" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Diem" class="java.lang.Double">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MaNH" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM HocVien where  MaHV = $P{MaHV}]]>
+	</queryString>
+	<field name="MaHV" class="java.lang.Integer"/>
+	<field name="MaKH" class="java.lang.Integer"/>
+	<field name="MaNH" class="java.lang.String"/>
+	<field name="Diem" class="java.lang.Double"/>
+	<group name="MaHV">
+		<groupExpression><![CDATA[$F{MaHV}]]></groupExpression>
+	</group>
+	<group name="MaKH">
+		<groupExpression><![CDATA[$F{MaKH}]]></groupExpression>
+	</group>
+	<group name="MaNH">
+		<groupExpression><![CDATA[$F{MaNH}]]></groupExpression>
+	</group>
+	<group name="Diem">
+		<groupExpression><![CDATA[$F{Diem}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="310" y="37" width="100" height="20" uuid="9464a877-0735-4672-9b5f-dba09cccbfbd"/>
+				<textFieldExpression><![CDATA[$F{Diem}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="37" width="100" height="20" uuid="5dd3f597-0a31-40a1-98a6-f32d29c070a4"/>
+				<textFieldExpression><![CDATA[$F{MaNH}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
