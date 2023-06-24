@@ -1,0 +1,188 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div>
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                      <h5 class="text-white">ONLINE ENTERTAINMENT</h5>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">MY FAVORITES</a>
+                          </li>
+
+                         
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">MY ACCOUNT</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">login</a></li>
+                              <li><a class="dropdown-item" href="#">Fogot Password</a></li>
+                              <li><a class="dropdown-item" href="#">Registration</a></li>
+                              <li><a class="dropdown-item" href="#">Logoff</a></li>
+                              <li><a class="dropdown-item" href="#">Change Password</a></li>
+                              <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200px" src="https://www.youtube.com/embed/pzQ2d16B9Z8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                                
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Unlike</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200px" src="https://www.youtube.com/embed/pzQ2d16B9Z8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Like</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200px" src="https://www.youtube.com/embed/pzQ2d16B9Z8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Unlike</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200" src="https://www.youtube.com/embed/CHw1b_1LVBA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Unlike</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200" src="https://www.youtube.com/embed/CHw1b_1LVBA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Unlike</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3" style="float: left;">
+                    <div class="card pt-2" data-bs-toggle="card">
+                        <div class="text-center">
+                            <iframe width="80%" height="200" src="https://www.youtube.com/embed/CHw1b_1LVBA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="" style="font-size: 13px; color: #333;">Video Titile</a>
+                            </div>
+                            <hr>
+                            <div class="float-end">
+                                <button class="btn btn-success">Unlike</button>
+                                <button class="btn " style="background-color: #ff6a00; color: white;">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="btn btn-success mx-2" src="icons/last.svg" alt="">
+                <img src="icons/previous.svg" class="btn btn-success mx-2" alt="">
+               <img src="icons/next.svg" class="btn btn-success mx-2"  class="btn btn-success mx-2" alt="">
+               <img src="icons/frist.svg"class="btn btn-success mx-2"  alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

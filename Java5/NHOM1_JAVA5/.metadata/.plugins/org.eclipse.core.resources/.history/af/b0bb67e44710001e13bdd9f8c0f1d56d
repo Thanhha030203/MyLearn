@@ -1,0 +1,36 @@
+package com.ps20520.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.ps20520.UserDao;
+import com.ps20520.entity.Users;
+
+@Controller
+public class UserController {
+
+	 @Autowired
+	 UserDao userdao;
+	 
+	 @RequestMapping("/")
+	 public String index(@ModelAttribute("UsersInfor") Users userinfor) { 
+		 return "index";
+	 }
+	 @RequestMapping("/edit/{id}")
+	 public String edit(@PathVariable("id") String id, Model model) { 
+		 Users users = userdao.getById(id);
+		 model.addAttribute("UsersInfor", users);
+		 return "index";
+	 }
+	 public void listusers(Model model) { 
+		 List<Users> listusers= userdao.findAll();
+		 model.addAttribute("listusers", listusers);
+	 }
+	 
+}

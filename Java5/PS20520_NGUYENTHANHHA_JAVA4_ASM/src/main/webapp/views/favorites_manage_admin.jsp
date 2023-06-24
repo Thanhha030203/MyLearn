@@ -1,0 +1,153 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#favorites_manage">FAVORITES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#favorites_user_manage">FAVORITES USER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#share_friends_manage">SHARE FRIENDS</a>
+                </li>
+            </ul>
+
+        
+            <div class="tab-content">
+                <div id="favorites_manage" class="container tab-pane active"><br>
+                    <div>
+                        <div class="my-3">
+                            <label for="" style="float: left; margin-right: 10px;">VIDEO TITLE?</label>
+
+                            <div class="input-group" style="width: 70%;">
+                                <input type="text" class="form-control " ng-model="SearchText"
+                                    placeholder="Báº¡n Äang tÃ¬m kiáº¿m cÃ¡i gÃ¬....">
+                                <div class="">
+                                    <a href="#">
+                                        <button type="button">
+                                            TÃ¬m kiáº¿m
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>VIDEO TITLE</td>
+                                <td>FAVORITES COUNT</td>
+                                <td>LASTES DATE</td>
+                                <td>QLEST DATE</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>LÃ¢u ghÃª má»i gáº·p</td>
+                                <td>100</td>
+                                <td>31/12/2010</td>
+                                <td>01/01/2020</td>
+
+
+                            </tr>
+                        </table>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+            <div id="favorites_user_manage" class="container tab-pane fade"><br>
+                <div>
+                    <div class="my-3">
+                        <label for="" style="float: left; margin-right: 10px;">VIDEO TITLE?</label>
+
+                        <div class="input-group" style="width: 70%;">
+                            <input type="text" class="form-control " ng-model="SearchText"
+                                placeholder="Báº¡n Äang tÃ¬m kiáº¿m cÃ¡i gÃ¬....">
+                            <div class="">
+                                <a href="#">
+                                    <button type="button">
+                                        TÃ¬m kiáº¿m
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Username</td>
+                            <td>Fullname</td>
+                            <td>Email</td>
+                            <td>Favorites date</td>
+                        </tr>
+                        <tr>
+                            <td>TenNV</td>
+                            <td>Nguyá»n VÄn TÃ¨o</td>
+                            <td>tennv@gmail.com</td>
+                            <td>01/01/2020</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+            </div>
+            <div id="share_friends_manage" class="container tab-pane fade"><br>
+                <div>
+                    <div class="my-3">
+                        <label for="" style="float: left; margin-right: 10px;">VIDEO TITLE?</label>
+
+                        <div class="input-group" style="width: 70%;">
+                            <input type="text" class="form-control " ng-model="SearchText"
+                                placeholder="Báº¡n Äang tÃ¬m kiáº¿m cÃ¡i gÃ¬....">
+                            <div class="">
+                                <a href="#">
+                                    <button type="button">
+                                        TÃ¬m kiáº¿m
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>SENDER NAME</td>
+                            <td>SENDER EMAIL</td>
+                            <td>RECEIVER EMAIL</td>
+                            <td>SENT DATE</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyá»n VÄn TÃ¨o</td>
+                            <td>tennv@gmail.com</td>
+                            <td>poly@gmail.com</td>
+                            <td>01/01/2020</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

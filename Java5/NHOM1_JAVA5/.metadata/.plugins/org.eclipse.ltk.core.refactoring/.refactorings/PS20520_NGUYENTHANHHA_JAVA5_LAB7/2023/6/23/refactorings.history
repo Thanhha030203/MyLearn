@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MailInfo.java&apos; to &apos;NhanVanStore_ASM/src/main/java/com.NhanVanStore_ASM.entity&apos;&#x0D;&#x0A;- Original project: &apos;PS20125_Lab7&apos;&#x0D;&#x0A;- Destination element: &apos;NhanVanStore_ASM/src/main/java/com.NhanVanStore_ASM.entity&apos;&#x0D;&#x0A;- Original element: &apos;com.PS20125_Lab7.bean.MailInfo.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=NhanVanStore_ASM/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.NhanVanStore_ASM.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.PS20125_Lab7.bean{MailInfo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1686390054129" units="1" version="1.0"/>
+</session>

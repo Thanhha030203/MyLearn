@@ -1,0 +1,153 @@
+
+.con{ 
+    position: relative;
+   
+}
+.More{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.More_product_user{ 
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.con:hover .More{ 
+    opacity: 1;
+    width: 100%;
+    color: White;
+}
+.con:hover .More_product_user{ 
+    opacity: 1;
+    width: 80%;
+    color: White;
+}
+.text_a {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .presention{ 
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .presention::after{ 
+    content: "";
+    display: block;
+    width:85%;
+    height: 3px;
+    background: #333;
+    right: 0;
+    top: 50%;
+    position: absolute;
+   
+  }
+  .favorite{ 
+      height: 400px;
+      width: 100%;
+      background-color: black;
+  }
+  
+  .favorite_image{ 
+
+  }
+  .favorite_image :hover{ 
+      opacity: 0.7;
+}
+.favorite_text{ 
+    color: #333;
+}
+.favorite_text:hover{ 
+    color: #617BB8;
+}
+footer{
+    background-color: #445268;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .footers-h{
+    padding: 10px;
+    color: #fff;
+    min-height: 100px;
+    position: relative;
+    font-size: 12px;
+    min-width: 752px;
+    text-align: left;
+  }
+  .confooter{ 
+    width: 80%;
+    height: auto;
+    border-bottom: 1px solid #313D52;
+  }
+  dd{
+    color: #fff;
+     padding:5px 0; 
+     line-height: 12px;
+     margin: 0;
+  }
+  dl{
+    font: inherit;
+  
+      display: block;
+       color: #333;
+  }
+  dt{
+    display: block;
+    margin: 0; padding:0 ;
+    color: #fff;
+    font-size: 18px;
+    line-height: 14px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  dd>a{
+    color: #fff;
+    font-size: 12px;
+  }
+  dd>a:hover{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  .language{
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.fos{
+    color: #fff;
+     width: 130px;
+      height: 30px; 
+      margin-right: 7px;
+       vertical-align: middle;
+       text-decoration: none;
+        background-color: 0 -100px;
+         background: url(images/linnks.png) no-repeat;
+          margin-top: -1px;
+           text-align: center;
+  }
