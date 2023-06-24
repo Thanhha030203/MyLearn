@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6-bai5</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-5" ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <div class="card">
+                <div class="card-header">
+                    CUSTOM VALIDATION
+                </div>
+                <form class="card-body"name="frmPoly">
+                    <div class="form-group" >
+                        <label for="">Số poly</label>
+                        <input type="number" name="txtNumber" class="form-control" ng-model="number" poly-number
+                            required>
+                        <span ng-show="frmPoly.txtNumber.$invalid && frmPoly.txtNumber.$dirty" class="">Số này không
+                            chia hết cho 2 và 9</span>
+                    </div>
+                </form>
+
+                <div class="card-footer">
+                    <button class="bg-info border-0 rounded">KIỂM TRA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular-route.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+
+        });
+        app.directive("polyNumber", function () {
+            return {
+                require: "ngModel",
+                link: function (scope, element, attr, mCtrl) {
+                    mCtrl.$parsers.push(function (value) {
+                        var number = parseInt(value);
+                        if (number % 2 == 0 && number % 9 == 0) {
+                            mCtrl.$setValidity('charE', true);
+                        } else {
+                            mCtrl.$setValidity('charE', false);
+                        }
+                        return value;
+                    });
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
+

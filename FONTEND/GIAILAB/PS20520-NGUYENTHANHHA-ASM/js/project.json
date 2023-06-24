@@ -1,0 +1,331 @@
+[
+    {
+        "Id": 0,
+        "Name": "Ip14 Pro max",
+        "origin": "USA",
+        "Images": "images/ip-14.webp",
+        "Title": "Ip14 pro max giá siêu rẻ hàng chất lượng cao",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "1500$ - 2000$",
+        "Type": [
+            {
+                "color": "Green",
+                "Pieces": 2000,
+                "quantity": 570
+            },
+            {
+                "color": "white",
+                "Pieces": 1500,
+                "quantity": 1000
+            }
+        ]
+    },
+    {
+        "Id": 1,
+        "Name": "Áo len thủ công",
+        "origin": "VietNam",
+        "Images": "images/aolen.jpg",
+        "Title": "Dệt Kim Máy Tính KhôngTay Mới Đầm Nữ Mùa Xuân",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "20$ - 25$",
+        "Type": [
+            {
+                "color": "Gray",
+                "Pieces": 20,
+                "quantity": 2780,
+                "buy" :0
+            },
+            {
+                "color": "brown",
+                "Pieces": 20,
+                "quantity": 2780,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 2,
+        "Name": "Máy chơi game",
+        "origin": "China",
+        "Images": "images/maygame.jpg",
+        "Title": "Máy chơi điện tử với cấu hình mạnh đang ưu đãi mạnh",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "4000$ - 5000$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 4700,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 3,
+        "Name": "Đồ lót",
+        "origin": "China",
+        "Images": "images/quansip.jpg",
+        "Title": "Máy chơi điện tử với cấu hình mạnh đang ưu đãi mạnh",
+        "Require": "3 cái (Đơn tối thiểu",
+        "about": "5$ - 10$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 10,
+                "quantity": 50,
+                "buy" :0
+            },
+            {
+                "color": "Pink",
+                "Pieces": 10,
+                "quantity": 120,
+                "buy" :0
+            },
+            {
+                "color": "blue",
+                "Pieces": 5,
+                "quantity": 520,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 4,
+        "Name": "Áo thun",
+        "origin": "UK",
+        "Images": "images/aoformtrang.jpg",
+        "Title": "Áo thun từ UK đang được sale mạnh duy nhất hôm nay",
+        "Require": "3 cái (Đơn tối thiểu",
+        "about": "20$",
+        "Type": [
+            {
+                "color": "White",
+                "Pieces": 20,
+                "quantity": 1200,
+                "buy" :0
+            },
+            {
+                "color": "Black",
+                "Pieces": 20,
+                "quantity": 1500,
+                "buy" :0
+            },
+            {
+                "color": "brown",
+                "Pieces": 20,
+                "quantity": 1580,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 5,
+        "Name": "Bộ ly uống trà",
+        "origin": "China",
+        "Images": "images/chendia.jpg",
+        "Title": "Bộ ly sứ nho nhã với mẫu mã cổ điển ưa chuộng",
+        "Require": "1 bộ (Đơn tối thiểu",
+        "about": "70$",
+        "Type": [
+            {
+                "color": "white",
+                "Pieces": 70,
+                "quantity": 57,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 6,
+        "Name": "Áo khoác",
+        "origin": "Mexico",
+        "Images": "images/hoodies.jpg",
+        "Title": "Áo khoác đến từ thương hiệu Loca đang được ưa chuộng",
+        "Require": "1 cái(Đơn tối thiểu",
+        "about": "100$",
+        "Type": [
+            {
+                "color": "Green",
+                "Pieces": 100,
+                "quantity": 20,
+                "buy" :0
+            },
+            {
+                "color": "Black",
+                "Pieces": 100,
+                "quantity": 50,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 7,
+        "Name": "Máy quay",
+        "origin": "UK",
+        "Images": "images/mayquay.jpg",
+        "Title": "Dung lượng lớn độ bề cho các cuộc chơi",
+        "Require": "% cái(Đơn tối thiểu",
+        "about": "4500$ - 5500$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 4800,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 8,
+        "Name": "Bikini",
+        "origin": "China",
+        "Images": "images/setbikini.jpg",
+        "Title": "Set đẹp cho mùa hè",
+        "Require": "1 cái(Đơn tối thiểu",
+        "about": "7$ - 10$",
+        "Type": [
+            {
+                "color": "Red",
+                "Pieces": 8,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 9,
+        "Name": "Cửa",
+        "origin": "VietNam",
+        "Images": "images/cua.jpg",
+        "Title": "Vật liêu tạo thành cao cấp chống trộm",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "120$ - 150$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 120,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 10,
+        "Name": "Bikini",
+        "origin": "China",
+        "Images": "images/bikini.jpg",
+        "Title": "Vải mát thoả mùa hè",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "2$ - 5$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 5,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 11,
+        "Name": "Áo tằm",
+        "origin": "China",
+        "Images": "images/aotam.jpg",
+        "Title": "Sợi vải làm từ sợi tơ tằm 100%",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "50$ - 100$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 75,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 12,
+        "Name": "Quần short nam",
+        "origin": "China",
+        "Images": "images/quansort.jpg",
+        "Title": "Quần shorrt nam vải cao cấp",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "10$ - 10$",
+        "Type": [
+            {
+                "color": "Xanh",
+                "Pieces": 10,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 13,
+        "Name": "Điện tử",
+        "origin": "India",
+        "Images": "images/dientu.webp",
+        "Title": "Máy chơi điện tử với cấu hình mạnh đang ưu đãi mạnh",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "100$ - 110$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 100,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 14,
+        "Name": "Tóc giả",
+        "origin": "China",
+        "Images": "images/tocgia2.webp",
+        "Title": "Tóc giả tơ tự nhiên mềm và trông như thật",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "7$ - 10$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 9,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 15,
+        "Name": "Đồng hồ",
+        "origin": "Canada",
+        "Images": "images/dongho.webp",
+        "Title": "Đồng hồ đến từ thượng hiệu Canada",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "7000$ - 9000$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 8000,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    },
+    {
+        "Id": 16,
+        "Name": "Phòng khám ",
+        "origin": "China",
+        "Images": "images/phongkham.webp",
+        "Title": "Thiết bị khám cho các phòng khám đang được hỗ trợ giá",
+        "Require": "1 cái (Đơn tối thiểu",
+        "about": "100$ - 200$",
+        "Type": [
+            {
+                "color": "Black",
+                "Pieces": 150,
+                "quantity": 100,
+                "buy" :0
+            }
+        ]
+    }
+]

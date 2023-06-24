@@ -1,0 +1,394 @@
+*{
+    margin: auto;
+}
+.a{
+    line-height: 50px;
+    padding-top: 0px;
+}
+img{
+    line-height: 50px;
+
+}
+.container-a{
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.con{ 
+  width: 92%;
+  margin-top: 20px;
+  
+}
+/* article{ 
+
+} */
+.cons{
+    height: 450px;
+    width: 100%;
+    color: black;
+    background-color: white;border: lightgray 1px solid;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+ /* .navbar>ul>li{ 
+      list-style: none;
+      text-decoration: none;
+      margin-bottom: 20px;
+  } */
+  .com{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .join{ 
+      background-color: #f60;
+      color: white;
+      width: 200px;
+      height: 35px;
+      margin-left: 0;
+      padding: 0;
+      margin-top: 20px;
+    border: 0;
+  }
+  .col-as{
+      width: 100%;
+      height: 90px;
+      background-color: #ECECEC;
+      border-radius: 5px;
+  }
+  .col-con{
+      float: left;
+      padding: 5px;
+
+  }
+  .con2{
+        width: 100%;
+        height: 200px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+  .con2-con1{
+      width: 32%;
+      height: 100%;
+      margin-right: 2%;
+      background-color: white;
+      border-radius: 7px;
+      float: left;
+  }
+.con2con1{
+    width: 32%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    border-radius: 7px;
+}
+/* .con1css{ 
+    background-color: #ECECEC;
+} */
+.con2-con1-con1{
+    width: 32%;
+    height: 75%;
+    float: left;
+}
+.con2con1con1{
+    width: 32%;
+    height: 75%;
+
+    float: left;
+}
+.con3{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+}
+.con3-con1{
+    width: 100%;
+    border-radius: 7px;
+    height: 300px;
+    /* background-color: white; */
+}
+.aftertext>h4 {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .aftertext>h4:after {
+    content: "";
+    display: block;
+    width: 79%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .aftertext1,.aftertext7>h4 {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .aftertext1>h4:after {
+    content: "";
+    display: block;
+    width: 89%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .aftertext7>h4:after {
+    content: "";
+    display: block;
+    width: 72%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .aftertext2>h4 {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .aftertext2>h4:after {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .aftertext3>h4 {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .aftertext3>h4:after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .aftertext4>h4 {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .aftertext4>h4:after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 5px;
+    background: lightgray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .con4{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+}
+.con4-con1{
+  width: 32%;
+  height: 100%;
+  margin-right: 2%;
+  background-color: white;
+  border-radius: 7px;
+  float: left;
+}
+.con4con1{
+width: 32%;
+height: 100%;
+background-color: white;
+float: left;
+border-radius: 7px;
+}
+
+footer{
+  background-color: #445268;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.footers-h{
+  padding: 10px;
+  color: #fff;
+  min-height: 100px;
+  position: relative;
+  font-size: 12px;
+  min-width: 752px;
+  text-align: left;
+}
+.confooter{ 
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #313D52;
+}
+dd{
+  color: #fff;
+   padding:5px 0; 
+   line-height: 12px;
+   margin: 0;
+}
+dl{
+  font: inherit;
+
+    display: block;
+     color: #333;
+}
+dt{
+  display: block;
+  margin: 0; padding:0 ;
+  color: #fff;
+  font-size: 18px;
+  line-height: 14px;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+dd>a{
+  color: #fff;
+  font-size: 12px;
+}
+dd>a:hover{
+  color: #fff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.fos{
+  color: #fff;
+   width: 130px;
+    height: 30px; 
+    margin-right: 7px;
+     vertical-align: middle;
+     text-decoration: none;
+      background-color: 0 -100px;
+       background: url(images/linnks.png) no-repeat;
+        margin-top: -1px;
+         text-align: center;
+}
+.language{
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+.pos{
+  position: relative;
+}
+.colheader{
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: auto;
+  padding-bottom: 7px;
+}
+.colheader2{
+  
+  position: absolute;
+  background-color: white;
+ 
+  z-index: 999;
+
+}
+.ing-text{
+  position: relative;
+}
+.text-in-img{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  font-size: 24px;
+  font-weight: 450;
+  color: white;
+}
+.button-in-img{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: white;
+  width: 40%;
+  height: 35px;
+  line-height: 30px;
+}
+
+.text1-in-img{
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  right: 10%;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+.text2-in-img{
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  right: 10%;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.text3-in-img{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  right: 10%;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.button1-in-img{
+  position: absolute;
+  bottom: 15%;
+  left: 6%;
+  border-radius: 20px;
+  border-color: #fff;
+  font-size: 12px;
+  font-weight: 450;
+  background: 0 0;
+  width: 30%;
+  height: 35px;
+  line-height: 30px;
+}
+
+img:hover{
+  opacity: 0.5;
+}
+

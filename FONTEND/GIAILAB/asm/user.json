@@ -1,0 +1,26 @@
+[
+    {
+        "ID" : 0,
+        "UserName" : "hant",
+        "Password" :"hantps",
+        "FullName" : "Nguyễn Thanh Hà",
+        "Image" : "images/h1.jpg",
+        "Money" : 1234
+    },
+    {
+        "ID" : 1,
+        "UserName" : "thannhha",
+        "Password" :"ha123",
+        "FullName" : "Nguyễn Thanh Hà",
+        "Image" : "images/h2.jpg",
+        "Money" : 23434
+    },
+    {
+        "ID" : 2,
+        "UserName" : "hanguyen",
+        "Password" :"123ha",
+        "FullName" : "Nguyễn Thanh Hà",
+        "Image" : "images/h3.jpg",
+        "Money" : 634
+    }
+]

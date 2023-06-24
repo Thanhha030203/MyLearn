@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SaveTestNGResultToExcel2" parallel="false">
+		<test name="SaveTestNGResultToExcel2">
+			<classes>
+				<class name = "fpoly.SaveTestNGResultToExcel2">
+				<methods>
+					<include name = "LaunchWebsite"></include>
+			
+					<include name = "FillLoginDetails"></include>
+				</methods>
+				</class>
+				
+			</classes>
+		</test>
+</suite>

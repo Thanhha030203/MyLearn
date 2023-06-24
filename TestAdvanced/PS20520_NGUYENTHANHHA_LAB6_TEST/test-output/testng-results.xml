@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-29T17:51:21 ICT" name="Default suite" finished-at="2023-03-29T17:51:51 ICT" duration-ms="29269">
+    <groups>
+    </groups>
+    <test started-at="2023-03-29T17:51:21 ICT" name="Default test" finished-at="2023-03-29T17:51:51 ICT" duration-ms="29269">
+      <class name="com.firsttestngfle">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.firsttestngfle@53fe15ff]" started-at="2023-03-29T17:51:21 ICT" name="launchBrowser" finished-at="2023-03-29T17:51:50 ICT" duration-ms="28955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:com.firsttestngfle@53fe15ff]" started-at="2023-03-29T17:51:51 ICT" name="verifyHomepageTitle" finished-at="2023-03-29T17:51:51 ICT" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:com.firsttestngfle@53fe15ff]" started-at="2023-03-29T17:51:51 ICT" name="terminateBrowser" finished-at="2023-03-29T17:51:51 ICT" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.firsttestngfle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

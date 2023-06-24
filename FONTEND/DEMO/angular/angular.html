@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <h1>{{loiChuc}}</h1>
+    </div>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller("myCtrl",myFunc);
+        function myFunc($scope){
+            $scope.loiChuc='Happy new year';
+        }
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <h1>{{loiChuc}}</h1>
+    </div>
+    <script>
+        angular.module('myApp',[]).controller("myCtrl",function($scope){
+            $scope.loiChuc='Happy new year';
+        });
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <h1>{{loiChuc}}</h1>
+        <h2>{{student.name}}</h2>
+        <h2>{{student.class}}</h2>
+    </div>
+    <script>
+        angular.module('myApp',[]).controller("myCtrl",function($scope){
+            $scope.loiChuc='Happy new year';
+            $scope.student={
+                name:"Nguyễn Văn Tèo",
+                class:"IT23",
+            }
+        });
+
+    </script>
+</body>
+</html>

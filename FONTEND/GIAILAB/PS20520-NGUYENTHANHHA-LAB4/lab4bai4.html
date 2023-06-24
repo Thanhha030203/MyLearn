@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="haapps">
+    <div ng-controller = "actrl" class="container mt-5">
+      
+          <div class="mb-3">
+            <label for="" class="form-label">Chiều dài</label>
+            <input type="text" class="form-control" ng-model = "height" name="" placeholder="nhập chiều dài" id="">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Chiều rông</label>
+            <input type="text" class="form-control"  ng-model= "width" name="" placeholder="nhập chiều rộng" id="">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Diện tích</label>
+            <input type="text" class="form-control"  value="{{s}}" name=""  id="">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Chu vi</label>
+            <input type="text" class="form-control"   value="{{c}}" name="" id="">
+        </div>
+            <hr>
+            <button ng-click="tinh()" class="btn btn-white border">Calculate</button>
+    </div>
+    <script src="js/lab4.js"></script>
+</body>
+</html>

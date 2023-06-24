@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="control.js"></script>
+</head>
+<body ng-app ="ha">
+    <div class="container" ng-controller = "ctrlAdmin">
+        <table class="table table-bordered">
+            <tr>
+                <td>ID</td>
+                <td>UserName</td>
+                <td>Password</td>
+                <td>FullName</td>
+                <td>Images</td>
+                <td>Money</td>
+            </tr>
+            <tr ng-repeat ="u in user_list " >
+                <td>{{u.ID +1}}</td>
+                <td>{{u.UserName}}</td>
+                <td>{{u.Password}}</td>
+                <td>{{u.FullName}}</td>
+                <td style="width: 200px;height: 100px;"><img src="{{u.Image}}" class="w-50 h-100" alt=""></td>
+                <td>{{u.Money}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="control.js"></script>
+</body>
+</html>

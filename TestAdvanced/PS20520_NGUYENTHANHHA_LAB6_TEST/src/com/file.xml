@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="Parameters Testing Test Suite">
+	<test name ="Parameters Testing">
+		
+			<parameter name="BrowserName" value="chrome"/>
+			<parameter name="UserName" value="demo"/>
+			<parameter name="Passcode" value="PASSWORD"/>
+			
+		<classes>
+			<class name="com.ParametersTesting"/>
+		</classes>
+	</test>
+</suite>

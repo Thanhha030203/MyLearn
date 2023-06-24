@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body style="background-color: #f2f3f7;">
+    <div style="width: 95%; background-color: white;">
+        <div class="row pt-5 mt-1">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 hinh">
+                        <img src="{{product_list[index].Images}}" class="w-100" alt="">
+                        <img src="icons/icon/heart.png" class="iconss" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="product-title">
+                            Ready to ship
+                        </div>
+                        <div class="product-iicons">
+                            <img src="icons/icon/tich.png" style="margin-right: 4px;
+                            margin-left: 8px;
+                            vertical-align: middle;" alt=""> In Stocks
+                            <img src="icons/icon/tich.png" style="margin-right: 4px;
+                            margin-left: 8px;
+                            vertical-align: middle;" alt=""> Fast Dispacth
+
+                        </div>
+                        <div class="product-titles">
+                            <h1>{{product_list[index].Title}} <span class="brand"
+                                    style="background-color: #edf0f3; color: #999;">Popular</span></h1>
+
+                        </div>
+                        <div>
+                            <div>
+                                <span>
+                                    <img src="icons/icon/star.png" alt="">
+                                    <img src="icons/icon/star.png" alt="">
+                                    <img src="icons/icon/star.png" alt="">
+                                    <img src="icons/icon/star.png" alt="">
+                                    <img src="icons/icon/star.png" alt="">
+                                </span>
+                                <span style="    margin-right: 7px; color: #ff6a00;"> 4.7</span>
+                                <span style="color: #666;">10 Reviews</span>
+                                <span style="color: #666; margin-left: 15px;">29 buyers</span>
+                            </div>
+                        </div>
+                        <div class="product-note">
+                            <img src="icons/icon/can.png" alt="">
+                            <span>No.2 Most popular in Wallet</span>
+                        </div>
+                        <hr>
+                        <div class="row mb-4">
+                            <div class="col-md-3">
+                                <div class="product-ct">
+                                    1 - 49 pieces
+                                </div>
+                                <div>
+                                    <span style="color: #ff7519; font-weight: bold; font-size: 20px;">$3.50</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-ct">
+                                    50 - 299 pieces
+                                </div>
+                                <div>
+                                    <span style="font-weight: bold; font-size: 20px;">$3.50</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-ct">
+                                    300 - 999 pieces
+                                </div>
+                                <div>
+                                    <span style="font-weight: bold; font-size: 20px;">$3.30</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-ct">
+                                    >= 1000 pieces
+                                </div>
+                                <div>
+                                    <span style="font-weight: bold; font-size: 20px;">$2.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <dl>
+                                <dt class="list-dt">Benefits : </dt>
+                                <dd class="list-dd">
+                                    <span style="    margin-right: 90px;flex: 1;">
+                                        Quick refunds on orders under US $1,000
+                                    </span>
+                                    <span>
+                                        <a style="color: #1686cc;text-decoration: none;" href="#">Claim now ></a>
+                                    </span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="pro">
+                                <label for="">Color</label>
+                                <div class="pro-1">
+                                    <div class="product-type" ng-repeat= "t in product_list[index].Type">
+                                        <input type="radio" name="a"   ng-click="chooseTypea($index)"  id="">
+                                    
+                                        <img class="min-img" src="{{product_list[index].Images}}" alt="">
+                                        <span class="pro-color">{{t.color}}</span>
+                                        <span style="min-width: 60px;">{{t.Pieces}}</span>
+                                        <div>
+                                            <span style="width: 100px; display: inline-block;">
+                                                <div class="buttons_added">
+                                                    <input class="minus is-form" type="button" value="-" ng-click="subClicksa( product_list[index].Id,$index)">
+                                                   <button class="btn btn-white">{{t.buy}}</button>
+                                                    <input class="plus is-form" type="button" value="+" ng-click="addClicksa(product_list[index].Id,$index)">
+                                                </div>
+                                            </span>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <!-- <div class="product-type">
+                                        <img class="min-img" src="images/vi.jpg" alt="">
+                                        <span class="pro-color">black</span>
+                                        <span style="min-width: 60px;">$3.51</span>
+                                        <span style="width: 100px; display: inline-block;">
+                                            <div class="buttons_added">
+                                                <input class="minus is-form" type="button" value="-" ng-model=giam()>
+                                                <input style="width: 40px;" aria-label="quantity" class="input-qty"
+                                                    max="10" min="1" name="" type="number" value="1">
+                                                <input class="plus is-form" type="button" value="+" ng-model=tang()>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="product-type">
+                                        <img class="min-img" src="images/vi.jpg" alt="">
+                                        <span class="pro-color">black</span>
+                                        <span style="min-width: 60px;">$3.51</span>
+                                        <span style="width: 100px; display: inline-block;">
+                                            <div class="buttons_added">
+                                                <input class="minus is-form" type="button" value="-" ng-model=giam()>
+                                                <input style="width: 40px;" aria-label="quantity" class="input-qty"
+                                                    max="10" min="1" name="" type="number" value="1">
+                                                <input class="plus is-form" type="button" value="+" ng-model=tang()>
+                                            </div>
+                                        </span>
+                                    </div> -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="pro">
+                                <label for="">Sample</label>
+                                <div class="pro-1">
+                                    <div class="product-type">
+                                        <img class="min-img" src=" {{product_list[index].Images}}" alt="">
+
+                                    </div>
+                                    <div>
+                                        <strong>
+                                            %5.00/pieces |
+                                        </strong>
+                                        <span style="font-size: 15px; color: #333;"> Min. order : 1 piece | </span>
+                                        <a style="    color: #1686cc; text-decoration: none;" href="#"> Get samples</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pro">
+                                <label for="">Lead time ; </label>
+                                <div class="pro-1">
+                                    <div class="product-type">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>Quantity (pieces) </td>
+                                                <td>1 - 100 </td>
+                                                <td>> 100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lead time (days)</td>
+                                                <td>7</td>
+                                                <td>To be negotiated
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pro">
+                                <label for="">Customization</label>
+                                <div class="pro-1">
+                                    <div >
+                                        <span>Customized logo</span>
+                                        <span>(Min. order 500 pieces)</span>
+
+                                    </div>
+                                    <div>
+                                        <span>Customized packaging</span>
+                                        <span>(Min. order 500 pieces)</span>
+                                    </div>
+                                    <div class="text-start">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="collapse"
+                                            data-bs-target="#demo">More</button>
+                                        <div id="demo" class="collapse">
+                                            <span>Graphic customization</span>
+                                            <span>(Min. order 500 pieces)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="pro">
+                                <label for="">Protection</label>
+                                <div class="pro-1">
+                                    <div >
+                                        <span>Trade Assurance</span>
+                                        <span>Protects your Alibaba.com orders</span>
+                                    </div>
+                                    <div>
+                                        <span>On-time Delivery Guarantee</span>
+                                    </div>
+                                    <div>
+                                        <span>Refund Policy</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+             <div class=" containerss">
+                <div class="con">
+                    <span style="font-size: 12px; color: #999; word-break: break-word;">The minimum order quantity is 1 piece</span>
+                    
+                    <div >
+                        <span style="text-align: left; margin-right: 70px;">0/1 piece</span>
+                        <span>from <span style="color: #333; font-size: 15px;font-weight: bold;display: inline-block;line-height: 16px;">$3.51</span></span>
+                    <div style="text-align: right;color: #333; font-size: 16px; margin-bottom: -10px;">Lead time 7 days  </div>
+                     <hr>
+                     <div style="margin-top: -10px;">
+                        <span style="text-align: left; margin-right: 70px;">shipping</span>
+                        <span>from <span style="color: #333; font-size: 15px;font-weight: bold;display: inline-block;line-height: 16px;">$5.51</span></span>
+                    </div>
+                    <div style="text-align: right;color: #333; font-size: 15px;"><span >Express Southeast Asia</span></div>
+                    <div style="text-align: right;color: #333; font-size: 15px;"><span   >E(Standard)</span><a href="#">Change</a></div>
+                    <div  style="text-align: right;color: #333; font-size: 15px; margin-bottom: -10px;">Alibaba.com Logistics</div>
+                    <hr> 
+                    <div style="text-align: right;font-size: 15px;color: #00ac54 ; margin-top: -10px;"><span  >Guaranteed deliveryBy Mar 9</span></div>
+                    <div style="text-align: right; font-size: 14px;color: #00ac54;"><span  >(Compensation for delayed delivery)</span></div>
+                    <div>
+                        <button type="button" class="join rounded-pill ms-0" style="width:220px">Start order</button>
+                        
+                    </div>
+                    <div>
+                        <button type="button" class="bg-white rounded-pill ms-0 border-1 mt-2"
+                            style="width:220px; height: 27px;">Contact supplier</button>
+                    </div>
+                    <div class="text-center py-2">
+                       <a href="#!product/{{product_list[index].Id}}" class="link-cart" ng-click="addCart(product_list[index],product_type)"> <img src="icons/icon/cart (1).png" alt=""> Add to cart</a>
+                    </div>
+                </div>
+             </div>
+           
+            </div>
+            <a href="#!home">Xem thêm sản phẩm khác</a>
+        </div>
+       
+    </div>
+</body>
+
+</html>

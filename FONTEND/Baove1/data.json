@@ -1,0 +1,66 @@
+[
+    {
+        "id" : 1,
+        "Images" : ["Image/sp1.1.webp","Image/sp1.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm voan tầng Ruby",
+        "pieces" : "7.780.000",
+        "newpieces" : "3.890.000"
+    },
+    {
+        "id" : 2,
+        "Images" : ["Image/sp2.1.webp","Image/sp2.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm cổ vuông Laura",
+        "pieces" : "6.480.000",
+        "newpieces" : "3.240.000"
+    },
+    {
+        "id" : 3,
+        "Images" : ["Image/sp3.1.webp","Image/sp3.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm xòe Taylor",
+        "pieces" : "7.100.000",
+        "newpieces" : "3.550.000"
+    },
+    {
+        "id" : 4,
+        "Images" : ["Image/sp4.1.webp","Image/sp4.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm kim sa Levic",
+        "pieces" : "3.890.000",
+        "newpieces" : "3.890.000"
+    },
+    {
+        "id" : 5,
+        "Images" : ["Image/sp5.1.webp","Image/sp5.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm dạ hội Eva",
+        "pieces" : "13.080.000",
+        "newpieces" : "6.540.000"
+    },
+    {
+        "id" : 6,
+        "Images" : ["Image/sp6.1.webp","Image/sp6.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm Dạ Hội Raya",
+        "pieces" : "10.860.000",
+        "newpieces" : "5.430.000"
+    },
+    {
+        "id" : 7,
+        "Images" : ["Image/sp7.1.webp","Image/sp7.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Đầm Ngọc San Hô AYDA",
+        "pieces" : "16.800.00",
+        "newpieces" : "8.400.000"
+    },
+    {
+        "id" : 8,
+        "Images" : ["Image/sp8.1.webp","Image/sp8.2.webp"] ,
+        "title" : "LEVI'S",
+        "des" : "Váy Catarina",
+        "pieces" : "4.700.000",
+        "newpieces" : "2.350.000"
+    }
+]

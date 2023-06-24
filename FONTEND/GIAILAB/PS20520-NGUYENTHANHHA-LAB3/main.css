@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    height: 200px;
+}
+
+.img-header{
+    position: absolute;
+    height: 200px;
+    width: 457px !important;
+    right: 0;
+}
+
+.shopping-mall{
+    position: absolute;
+    bottom: 20px;
+    font-variant: small-caps;
+    padding: 0 !important;
+    width: 37% !important;
+}
+
+.shopping-mall>h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+
+.shopping-mall>h5{
+    margin-top: 5px;
+    letter-spacing: 0,5px;
+}
+
+.content{
+    border: 1px solid #dedee3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.poly-cart{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.poly-cart ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart ul li{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.col-4{
+    margin-top: 15px !important;
+}
+
+.card-body img ul li{
+    align-items: center;
+    justify-content: center;
+}
+
+.poly-card{
+    cursor: pointer;
+}
+
+
+footer{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer p{
+    background: gray;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.carousel-inner img{
+    height: 350px;
+    width: 300px;
+}
+
+.container-fluid .row ul li{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.img-thumbnail{
+    margin-left: 10px;
+    height: 100px !important;
+    max-width: 10% !important;
+    cursor: pointer;
+}
+
+.list-group-item{
+    position: relative;
+}
+
+.list-group-item span{
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+    font-weight: 500;
+    margin-right: 10px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.list-btn{
+    position: relative;
+}
+
+.list-btn ul{
+    position: absolute;
+    margin: 0 !important;
+    left: 40%;
+}
+
+.d-flex li{
+    margin-right: 15px;
+}

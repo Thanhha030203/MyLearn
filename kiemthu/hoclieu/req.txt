@@ -1,0 +1,1 @@
+Requirement là một phần không thể thiếu của dự án, không chỉ giúp đội kỹ thuật phát triển các tính năng, giao diện một cách đúng hướng; mà còn giúp tester/ QA thực hiện công đoạn test một cách trơn tru, bàn giao được sản phẩm đúng yêu cầu. 

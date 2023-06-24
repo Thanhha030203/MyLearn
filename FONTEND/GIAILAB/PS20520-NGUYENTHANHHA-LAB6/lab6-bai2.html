@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4-bai1</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <Title>A</Title>
+</head>
+
+<body>
+
+    <div class="container mt-5" ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <div class="card">
+                <div class="card-header">
+                    BÁN HÀNG GIẢI KHÁT
+                </div>
+                <div class="card-boddy">
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>TÊN HÀNG</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>ĐƠN GIÁ</th>
+                            <th>THÀNH TIỀN</th>
+                        </tr>
+                        <tr ng-repeat="item in items" ng-init="item.quantity=1">
+                            <td>
+                                <input type="checkbox" ng-model="item.buy" name="" id="">
+                            </td>
+                            <td ng-bind="item.name"></td>
+                            <td>
+                                <input type="number" ng-model="item.quantity" ng-disabled="!item.buy">
+                            </td>
+                            <td ng-bind="item.price|currency"></td>
+                            <td ng-bind="item.price*item.quantity|currency"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    TỔNG TIỀN: <strong>{{getAmount()|currency}}</strong> VNĐ
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular-route.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.items = [
+                {
+                    name: "Nước ngọt",
+                    price: 10000
+                },
+                {
+                    name: "Cà phê đen",
+                    price: 12000
+                },
+                {
+                    name: "Thuốc lá",
+                    price: 12000
+                }
+            ];
+            $scope.getAmount = function () {
+                var amount = 0;
+                for (var i = 0; i < $scope.items.length; i++) {
+                    if ($scope.items[i].buy) {
+                        amount += $scope.items[i].price * $scope.items[i].quantity;
+                    }
+                }
+                return amount;
+            }
+        });
+    </script>
+</body>
+
+</html>

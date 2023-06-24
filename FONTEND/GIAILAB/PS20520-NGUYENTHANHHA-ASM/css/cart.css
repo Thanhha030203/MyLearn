@@ -1,0 +1,51 @@
+.contain{ 
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    
+
+}
+.con1{ 
+    width: 70%;
+    float: left;
+}
+.con2{ 
+    width: 24%;
+   background-color: white;
+    float: left;
+    margin-left: 2%;
+    font-family: Roboto;
+    border-radius: 10px;
+    height: 250px;
+}
+.blockscon{
+    padding:10px 15px;
+   
+}
+.hr{
+    margin-top: 100px;
+    margin-bottom:20px;
+    border-bottom: 1px solid #eee;
+}
+.bt{ 
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    vertical-align: middle;border-style: solid;
+    background: #f60;
+    border-color: #f60;
+    width: 90%;
+    color: #fff;
+    border-radius: 100px;
+    padding: 0 28px;
+    height: 36px;
+    font-size: 14px;
+    border-width: 1px;
+    margin: 17px 0px;
+}
+.types{ 
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}

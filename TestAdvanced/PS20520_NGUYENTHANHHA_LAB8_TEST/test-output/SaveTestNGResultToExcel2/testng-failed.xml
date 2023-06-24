@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SaveTestNGResultToExcel2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SaveTestNGResultToExcel2(failed)">
+    <classes>
+      <class name="fpoly.SaveTestNGResultToExcel2">
+        <methods>
+          <include name="FillLoginDetails"/>
+          <include name="suiteSteUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- fpoly.SaveTestNGResultToExcel2 -->
+    </classes>
+  </test> <!-- SaveTestNGResultToExcel2(failed) -->
+</suite> <!-- Failed suite [SaveTestNGResultToExcel2] -->

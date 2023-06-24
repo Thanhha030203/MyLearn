@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite1" parallel="false">
+	
+	<test name="suite1-test1">
+		<classes>
+			<class name ="MavenReport.TestClass1" />
+			<class name ="MavenReport.TestClass2" />
+		</classes>
+	</test>
+	<test name="suite1-test2">
+		<classes>
+			<class name ="MavenReport.TestClass3" />
+			<class name ="MavenReport.FactoryInstantiatedTestClass" />
+		</classes>
+	</test>
+</suite>

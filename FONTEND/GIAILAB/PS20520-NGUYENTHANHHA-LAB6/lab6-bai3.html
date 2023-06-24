@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6-bai3</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <style>
+        input.ng-invalid{
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div class="container mt-5" ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <div class="card">
+                <div class="card-header">
+                    TÍNH THƯỞNG TẾT NGUYÊN ĐÁN
+                </div>
+              
+
+                    <form class="card-boddy" name="frmBonus">
+                        <div class="form-group">
+                            <label for="hoten" class="form-label">Họ và tên:</label>
+                            <input type="hoten" ng-model="fullname" class="form-control" id="hoten"
+                                placeholder="" name="txtFullname" required >
+                                <span ng-show="frmBonus.txtFullname.$invalid">Vui lòng nhập họ và tên</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="luong" class="form-label">Lương:</label>
+                            <div class="input-group">
+                                <input type="number" ng-model="salary" class="form-control" name="txtSalary" min="2000000">
+                                <span class="input-group-text">VNĐ</span>
+                            </div>
+                            <span ng-show="frmBonus.txtSalary.$invalid">Lương ít nhất 2 triệu</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Giới tính</label>
+                            <div class="radio">
+                                <label for="">
+                                    <input type="radio" ng-model="gender" value="NAM">Nam
+                                </label>
+                                <label for="">
+                                    <input type="radio" ng-model="gender" value="NU">Nữ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Độ tuổi</label>
+                            <select class="form-control" ng-model="age" ng-options="x.age for x in ages" name=""
+                                id=""></select>
+                        </div>
+                        <h5 ng-show="frmBonus.$valid">Chúc mừng bạn đã nhập đúng</h5>
+                    </form>
+               
+                <div class="card-footer">
+                    TIỀN THƯỞNG: <strong>{{getBonus()|number:2}}</strong> VNĐ
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/angular-route.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var app=angular.module("myApp",[]);
+        app.controller("myCtrl",function($scope){
+            $scope.ages = [
+               {
+                age:"Dưới 25",
+                rate:0.07
+               },
+               {
+                age:"Từ 35 đến 40",
+                rate:0.1
+               },
+               {
+                age:"Trên 40",
+                rate:0.15
+               }
+
+            ];
+            $scope.age = $scope.ages[1];
+            $scope.salary=0;
+            $scope.gender = "NAM";
+            // getBonus()=> trả về tiền thưởng
+            $scope.getBonus = function(){
+                var bonus = $scope.age.rate *$scope.salary;
+                if($scope.gender =="NU"){
+                    bonus +=200000;
+                }
+                return bonus;
+            }
+        });
+    </script>
+</body>
+
+</html>
