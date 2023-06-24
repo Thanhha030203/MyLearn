@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app>
+	<div *ngFor="let author of authors">
+		{{author.id}}={{author.firstName}}{{author.lastName}}
+	</div> 
+	<!-- Đoạn lệnh dùng để duyệt mảng và chạy từng phần tử -->
+	<div *ngFor = 'let author of author; index as idx; count as total'>
+		({{idx}})/({{total}})-({{author.firstName}})({{author.lastName}})
+	</div>
+		<!-- Đoạn lệnh duyệt mảnh và lấy địa chỉ là idx và đếm số phần tử mảng là total -->
+	<!-- Với cấu trúc dùng dấu sao (*) như trên ta có thẻ chuyển đổi tương ứng về dạng ng-template và property binding như sau -->
+	<div ng-template ngFor [ngFor]="authors" let-author let-idx ='index' let-total='count'>
+		({{idx}})/({{total}}): {{author.id}} - {{author.firstName}} {{author.lastName}}
+	</div>
+<script src="gular.js"></script>
+</body>
+</html>

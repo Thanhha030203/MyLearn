@@ -1,0 +1,36 @@
+.container{
+    width: 1140px;
+    margin: auto;
+    border: 1px solid darkgrey;
+}
+header{ 
+    background-color: darkolivegreen;
+    height: 120px;
+    position: relative;
+    
+}
+main{ 
+    background-color: darkseagreen;
+    height: 400px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+}
+footer { 
+    background-color: darkslategrey;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+#chao{
+    color: deeppink;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+#ht,#email{ 
+    color: white;
+}

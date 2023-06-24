@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>CÁC SẢN PHẨM HOA</caption>
+            <tr>
+                <th><input type="checkbox" onchange="chonhet"></th>
+                <th>Tên sản phẩm hoa</th>
+                <th>Giá</th>
+                <th>Mua</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="thaydoi(this)" class="chon" ></td>
+                <td>Hạnh phúc trọn vẹn</td>
+                <td>900000</td>
+                <td><button onclick="them(this)" disabled>chọn</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="thaydoi(this)"class="chon"></td>
+                <td>Con Đường Thành Công</td>
+                <td>1750000</td>
+                <td><button  onclick="them(this)" disabled>chọn</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="thaydoi(this)"class="chon" ></td>
+                <td>Phú Quý</td>
+                <td>1300000</td>
+                <td><button  onclick="them(this)" disabled>chọn</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="thaydoi(this)"class="chon" ></td>
+                <td>Vững bước</td>
+                <td>1150000</td>
+                <td><button  onclick="them(this)" disabled>chọn</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="thaydoi(this)"class="chon"></td>
+                <td>Một cõi đi về</td>
+                <td>950000</td>
+                <td><button  onclick="them(this)" disabled>chọn</button></td>
+            </tr>
+        </table>
+        <hr>
+        <table id="cart">
+            <caption>GIỎ HÀNG CỦA BẠN</caption>
+        </table>
+        <h3 id="tong"></h3>
+    </div>
+    <script src="js/bai2.js"></script>
+</body>
+</html>

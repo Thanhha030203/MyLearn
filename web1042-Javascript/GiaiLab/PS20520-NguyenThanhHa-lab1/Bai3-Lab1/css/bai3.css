@@ -1,0 +1,25 @@
+*{ 
+    margin: 20px auto;
+}
+.box{
+    border: thin solid blue;
+    width: 500px;
+    height: 200px;
+    text-align:center ;
+}
+.box h2{ 
+    color: indigo;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 0px;
+    height: 50px;
+    line-height: 50px;
+}
+.box p{
+    margin-left: 20px;
+    color: green;
+    font-weight: bold;
+}
+#x{ 
+    color: brown;
+}

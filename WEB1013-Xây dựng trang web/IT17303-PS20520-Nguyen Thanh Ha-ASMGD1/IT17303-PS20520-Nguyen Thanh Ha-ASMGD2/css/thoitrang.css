@@ -1,0 +1,312 @@
+nav{ 
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    margin-top: 170px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 50px;
+    line-height: 100px;
+    font-weight: bolder;
+    text-shadow: 2px 2px red;
+    color: honeydew;
+}
+.container_2{ 
+    margin-top: 10px;
+    width: 90%;
+    height: 8250px;
+    background-color:gray;
+}
+.container_2 >article{ 
+    width: 75%;
+    height: 8230px;
+    float: left;
+}
+.container_2 >article >.container_col1{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bolder;
+    text-shadow: 2px 2px white;
+    margin-top: 40px;
+}
+.container_2 >article >.box1{
+    width: 29%;
+    height: 350px;
+    text-align: center;
+    float: left;
+    position: relative;
+
+}
+.container_2 >article >.box1 >.lotnen{ 
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    left: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    padding: 20px;
+}
+.container_2 >article >.box1 >img{ 
+    width: 100%;
+    height: 100%;
+}
+.container_2 >article >.box1:hover >img{ 
+    opacity: 0.7;
+   
+}
+.container_2 >article >.box1:hover >.lotnen{ 
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    left: 0;
+    background: rgba(6, 61, 6);
+    background: rgba(6, 61, 6, 0.8); /* Fallback color */ /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    padding: 20px;
+}
+.container_2 >article >.box2{ 
+    width: 90%;
+    height: 500px;
+    background:rgb(223, 93, 93);
+    background:rgb(223, 93, 93,0.5);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.container_2 >article >.box2 >img{ 
+    height: 85%;
+    width: 100%;
+
+}
+.container_2 >article >.box2 >img:hover{ 
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0.5);
+    color: white;
+}
+.container_2 >article >.box2 >.lot{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 85%;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0);
+    color: white;
+
+}
+.container_2 >article >.box2:hover >.lot{
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0.5);
+    color: white;
+}
+.container_2 >article >.box2 >a:link,:visited{ 
+    color: white;
+    text-decoration: none;
+
+}
+.container_2 >article >.box2 >a:hover{ 
+    color: black;
+    text-decoration: none;
+}
+.container_2 >article >.box3{ 
+    width: 90%;
+    height: 250px;
+    font-size: 20px;
+    font-variant: small-caps;
+    margin-top: 30px;
+}
+.container_2 >article >.box3 >img{ 
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.container_2 >article >.box3 >img:hover{ 
+    opacity: 0.5px;
+}
+.container_2 >article >.box3 >.boxchu{ 
+    float: right;
+    width: 63%;
+    height: 200px;
+    text-align: left;
+    margin-top: 30px; 
+}
+.container_2 >article >.box3 >.boxchu >a:link ,:visited{ 
+    color :white;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 20px;
+    padding-left: 20px;    
+}
+article >.container_500{ 
+    width: 100%;
+    height: 600px;
+}
+.container_2 >article >.box3 >.boxchu >a:hover{ 
+    color:yellow;
+}
+.container_500 >.col81{ 
+    width: 65%;
+    height: 95%;
+    float: right;
+}
+.container_500 >.col81 >.box5_tt{ 
+    width: 100%;
+    height: 30%;
+}
+.container_500 >.col81 >.box5_tt >img{ 
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.container_500 >.col81 >.box5_tt >img:hover{ 
+    opacity: 0.5;
+}
+.container_500 >.col81 >.box5_tt >.boxnho1{ 
+    float: right;
+    width: 60%;
+    height: 100px;
+    text-align: left;
+    margin-top: 30px;
+}
+.boxnho2 >a:link,:visited{ 
+    color: white;
+    text-decoration: none;
+}
+.boxnho2 >a:hover{ 
+    color: black;
+    text-decoration: none;
+}
+.container_500>.col4{ 
+    width: 25%;
+    height: 80%;
+    background-image: url(../images/sacdep.jpg);
+    float: right;
+    margin-top: 50px;
+}
+.container_500>.col4 >.tieude >.bol>h1{ 
+    width: 80%;
+    height: 70px;
+    text-align: center;
+    margin-top: 180px;
+    padding-top: 20px;
+    color: rgb(29, 4, 9);
+    font-size: 30px;
+}
+.container_500>.col4 >.tieude{ 
+    text-align: center;
+}
+.container_2 >aside { 
+    width: 25%;
+    height: 8200px;
+    float: right;
+
+}
+.container_2 >aside >.boxcanh{ 
+    width: 90%;
+    height:800px;
+    margin-top: 100px;
+    color: white;
+    line-height: 80px;
+}
+.container_2 >aside >.boxcanh >ul >li{ 
+    margin-left: 80px;
+    list-style: circle;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.container_2 >aside >.boxcanh >ul >li >a:link,:visited{ 
+    color: white;
+    text-decoration: none;
+}
+.container_2 >aside >.boxcanh >ul >li >a:hover{ 
+    color: black;
+    text-decoration: none;
+}
+.container_2 >aside >.tieudecanh{ 
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    line-height: 70PX;
+    text-align: center;
+    font-size: 25px;
+}
+aside .col0{
+    width: 90%;
+    height: 350px;
+    border: 0 0 10px rgb(165, 120, 120);
+    float: left;
+    margin: 30px 20px 0px 20px  ;
+    text-align: center;
+    
+}
+aside .col0 >img{
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    opacity: 1.0;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+aside .col0 >img:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+aside .col0 >a:link{
+    color: rgb(223, 223, 231);
+    text-decoration: none;
+    font-size: 15px;
+}
+aside .col0 >a:visited{
+    color: white;
+    text-decoration: none;
+}
+aside .col0 a:hover{
+    color: rgb(8, 19, 11);
+    text-decoration: underline;
+}
+aside >.boxcanh1{ 
+    width: 94%;
+    height: 150px;
+    font-size: 15px;
+    font-variant: small-caps;
+    margin-top: 30px;
+}
+aside >.boxcanh1 >img{ 
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+aside >.boxcanh1 >.boxnho1{ 
+        float: right;
+        width: 63%;
+        height: 10px;
+        text-align: left;
+        margin-top: 30px; 
+}
+aside >.boxcanh1 >.boxnho1 >a:link ,:visited{ 
+    color :white;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 15px;
+    padding-left: 20px;    
+}

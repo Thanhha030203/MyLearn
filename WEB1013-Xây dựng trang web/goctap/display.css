@@ -1,0 +1,38 @@
+.number{
+  list-style: none;
+}
+.number li{
+    display: inline-block;
+    background-color: brown;
+    position: relative;
+    margin-right: 20px;
+}
+.number li>a{
+    color: white;
+    text-decoration: none;
+}
+.number li:hover .number1{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+.number1{ 
+    display: none;
+    list-style: none;
+}
+.number1 li{ 
+    display: block;
+    background-color: burlywood;
+    
+}
+.number1 li:hover{
+    background-color: grey;
+}
+]
+.number1 li>a{ 
+    color: whitesmoke;
+}
+.number1>li >a:hover{
+    color: green;
+}

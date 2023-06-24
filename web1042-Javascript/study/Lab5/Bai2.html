@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+    <div class="container">
+        <table border="1" align="center">
+            <caption>CÁC SẢN PHẨM HOA</caption>
+            <thead>
+                <tr>
+                    <td><input type="checkbox" id="chonhet"></td>
+                    <td>Tên sản phẩm hoa</td>
+                    <td>Giá</td>
+                    <td>Mua</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" onclick="thaydoi(this)" class="chon"></td>
+                    <td>Hạnh phúc trọn vẹn</td>
+                    <td>900000</td>
+                    <td><button onclick="them(this)" disabled>Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="thaydoi(this)" class="chon"></td>
+                    <td>Con đường thành công</td>
+                    <td>1750000</td>
+                    <td><button onclick="them(this)" disabled>Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="thaydoi(this)" class="chon"></td>
+                    <td>Phú Quý</td>
+                    <td>1300000</td>
+                    <td><button onclick="them(this)" disabled>Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="thaydoi(this)" class="chon"></td>
+                    <td>Vững bước</td>
+                    <td>1150000</td>
+                    <td><button onclick="them(this)" disabled>Chọn</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="thaydoi(this)" class="chon"></td>
+                    <td>Một cõi đi về</td>
+                    <td>950000</td>
+                    <td><button onclick="them(this)" disabled>Chọn</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="bot">
+            <hr style="margin: 20px 0;">
+        <table id="cart">
+            <caption>GIỎ HÀNG CỦA BẠN</caption>
+        </table>
+        </div>
+        <div id="tongtien">
+            <h3>TỔNG SỐ TIỀN: <span id="tong">0</span></h3>
+        </div>
+    </div>
+    <script src="js/bai2.js"></script>
+</body>
+</html>

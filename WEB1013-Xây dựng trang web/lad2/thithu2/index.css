@@ -1,0 +1,55 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+header{
+    width: 90%;
+    height: 200px;
+    background-image: url(WEB1013-TestMau02/images/banner.png);
+    background-size: 100%;
+}
+header >.col1{
+    width: 60%;
+    height: 70%;
+    background-color: brown;
+    float: left;
+}
+nav{ 
+    width: 90%;
+    height: 60px;
+    background-color: gray;
+}
+article{ 
+    width: 90%;
+    height: 500px;
+    background-color: burlywood;
+}
+article >.col3{ 
+    width: 48%;
+height: 100%;
+background-color: aquamarine;
+float: left;
+margin-right:10px
+}
+article >.col3 >img{ 
+    width: 100%;
+    height: 50%;
+
+}
+article >.col3 input{ 
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article >.col3 textarea{ 
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+article >.col3 label{ 
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 5px;
+}

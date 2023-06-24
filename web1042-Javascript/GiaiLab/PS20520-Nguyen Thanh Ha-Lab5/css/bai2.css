@@ -1,0 +1,29 @@
+*{ 
+    margin: 0 auto;
+}
+.container{ 
+    width: 800px;
+    height: 600px;
+    background-color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+table{ 
+    width: 90%;
+    height: 50%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+td,th{ 
+    border: 1px solid black;
+}
+#cart{ 
+    border: 1px solid black;
+}
+#tong{
+    color: black;
+}
+hr{
+    height: 30px;
+    color: white;
+}

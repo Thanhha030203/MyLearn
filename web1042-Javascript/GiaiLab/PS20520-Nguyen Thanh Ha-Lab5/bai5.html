@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">TIỀN VÉ DU LỊCH HẠ LONG <span id="ngay"></span></div>
+        <header class="row">
+            <div>Gia đình</div>
+            <div>Số người lớn</div>
+            <div>số trẻ em</div>
+            <div>Tiền</div>
+        </header>
+        <div class="row">
+            <div>Đào kho Báu</div>
+            <div class="nl" contenteditable="true" onkeyup="tien(this)">11</div>
+            <div class="te" contenteditable="true" onkeyup="tien(this)">3
+            </div>
+            <div class="tien">SoTien</div>
+        </div>
+        <div class="row">
+            <div>Đỗ dạt cao</div>
+            <div class="nl" contenteditable="true" onkeyup="tien(this)">22</div>
+            <div class="te" contenteditable="true" onkeyup="tien(this)">2
+            </div>
+            <div class="tien">SoTien</div>
+        </div>
+        <div class="row">
+            <div>Mai Anh Tới</div>
+            <div class="nl" contenteditable="true" onkeyup="tien(this)">33</div>
+            <div class="te" contenteditable="true" onkeyup="tien(this)">4
+            </div>
+            <div class="tien">SoTien</div>
+        </div>
+        <div class="row">
+            <div>Phạm kỷ Luật</div>
+            <div class="nl" contenteditable="true" onkeyup="tien(this)">44</div>
+            <div class="te" contenteditable="true" onkeyup="tien(this)">6
+            </div>
+            <div class="tien">SoTien</div>
+        </div>
+        <div class="row">
+            <div>Mai anh Bảo</div>
+            <div class="nl" contenteditable="true" onkeyup="tien(this)">55</div>
+            <div class="te" contenteditable="true" onkeyup="tien(this)">7
+            </div>
+            <div class="tien">SoTien</div>
+        </div>
+        <footer class="row">
+            <div>Tổng</div>
+            <div id="tongnl"></div>
+            <div id="tongte"></div>
+            <div id="tongtien"></div>
+        </footer>
+        <div class="row"><button onclick="tinhtien()">Tính</button> <button>Ẩn Hiện</button></div>
+    </div>
+    <script src="js/bai5.js"></script>
+</body>
+</html>

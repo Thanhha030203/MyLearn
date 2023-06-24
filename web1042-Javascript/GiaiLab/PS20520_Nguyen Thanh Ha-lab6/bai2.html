@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Thanh Ha_PS20520</title>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>PHIẾU MUA HÀNG</h2>
+            <p>
+                <label for="">Sản phẩm</label>
+                <input id="tensp" type="text" placeholder="Nhập tên sản phẩm">
+                <div id="kq1"></div>
+            </p>
+            <p>
+                <label for="">Loại</label>
+                <select id="loai">
+                    <option value="" hidden>Chọn loại sản phẩm</option>
+                    <option value="DT">Điện thoại</option>
+                    <option value="MT">Máy tính</option>
+                    <option value="DT">Máy Lạnh</option>
+                    <option value="MT">Tivi</option>
+                </select>
+                <div id="kq2"></div>
+            </p>
+            <p>
+                <label for="">Đơn giá</label>
+                <input id="gia" placeholder="Nhập đơn giá">
+                <div id="kq3"></div>
+            </p>
+            <p>
+                <label for="">Nơi nhận hàng</label>
+                <input type="radio" name="diachi" onclick="hienthi(false)">Nội thành
+                <input type="radio" name="diachi" onclick="hienthi(true)">Ngoại thành
+                <div id="kq4"></div>
+            </p>
+            <p id="vc">
+                <label for="">Phí vận chuyển</label>
+                <input id="phi_vc" value="100000">
+            </p>
+            <p>
+                <label for=""></label>
+                <button onclick=" return kiemtra()">Đặt mua</button>
+            </p>
+        </form>
+    </div>
+    <script src="js/bai2.js"></script>
+</body>
+</html>

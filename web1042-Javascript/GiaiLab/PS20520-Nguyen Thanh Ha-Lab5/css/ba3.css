@@ -1,0 +1,88 @@
+*{ 
+    margin: 0 auto;
+}
+.container{
+    width: 40%;
+    height: 500px;
+    background-color: lightgray;
+    margin-top: 40px;
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+tr{ 
+    width: 100%;
+    height: 32%;
+   
+}
+tr td{ 
+    height: 32%;
+    width: 32%;
+    background-color: rgb(27, 27, 27);
+    
+}
+button{ 
+   width: 100%;
+   height: 100%; 
+   font-size: 90px;
+}
+body{
+    background-image: url(../images/7.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+#ketqua{ 
+    width: 30%;
+    height: 150px;
+    background-color: lightslategray;
+    border-radius: 10px;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 250px;
+    left: 35%;
+    border: 3px dashed black
+}
+h3{ 
+    margin-top: 30px;
+    color: #BCD2EE;
+    font-size: 50px;
+    line-height: 100px;
+    height: 100px;
+    width: 40%;
+    text-align: center;
+}
+.box{
+    width: 150px;
+    height: 150px;
+  background-color: white;
+    color: black;
+    position: fixed;
+    top: 200px;
+    right: 10%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border:  3px outset gray;
+
+}
+#hienthi{ 
+    width:90%;
+    height: 100px;
+    color: black;
+    line-height: 100px;
+    text-align: center;
+    font-size: 70px;
+    background-color: white;
+}
+#thang { 
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+}

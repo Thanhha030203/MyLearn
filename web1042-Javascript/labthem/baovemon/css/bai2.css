@@ -1,0 +1,40 @@
+.container{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 5px double green;
+}
+img{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 20px;
+}
+h3{
+    text-align: center;
+    color: rgb(205, 15, 15);
+    text-shadow: 1px 1px rgb(113, 70, 70);
+}
+p{
+    margin-left: 30px;
+}
+label{
+    color: rgb(8, 172, 8);
+    font-weight: 600;
+}
+input{
+    width: 90%;
+}
+em{
+    color: red;
+}
+button{
+    width: 130px;
+    height: 25px;
+    margin-left: 135px;
+    background: green;
+    color: white;
+    border: none;
+}
+button:hover{
+    border: 2px solid white;
+}

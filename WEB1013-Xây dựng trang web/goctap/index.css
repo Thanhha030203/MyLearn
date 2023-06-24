@@ -1,0 +1,46 @@
+*{ 
+    margin: 0 auto;
+    padding: 0px;
+}
+nav{
+    width: 80%;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+.me{
+    list-style: none;
+}
+.me>li{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 50px;
+    position: relative;
+    margin-right: 20px;
+}
+.me>li>a:hover{ 
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.me>li:hover .con{ 
+    display: block;
+}
+.con{ 
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.con>li{ 
+    display: block;
+    width: 100px;
+}
+.con>li>a:hover{ 
+    color:white;
+}
+.con>li:hover{ 
+    background-color: brown;
+}

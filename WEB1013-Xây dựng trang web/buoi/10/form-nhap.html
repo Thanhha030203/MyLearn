@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20520 | Form nhap</title>
+    <link rel="stylesheet" href="atyle.css">
+</head>
+<body>
+    <form action="">
+        <label for="">Họ và tên</label> <br>
+        <input type="text" name="" id="" placeholder="Họ và tên">
+        <br>
+        <fieldset>
+            <legend>Giới tính</legend>
+            <label for="">
+                <input type="radio" name="gioitinh" id="">Nam
+            </label>
+            <label for="">
+                <input type="radio" name="gioitinh" id="">Nữ
+            </label>
+           
+        </fieldset>
+        <label> Ngày sinh</label>
+        <br>
+        <input type="date" name="" id="">
+        <label for="">Điểm</label>
+        <input type="number" min="0" max="10" step="1">
+        <label> Nghề nghiệp</label>
+        <input list="danhsach">
+         <datalist>
+             <option value="Bac sỹ"></option>
+             <option value="Kỹ sư"></option>
+             <option value="Giáo viên"></option>
+         </datalist>
+         <fieldset>
+             <legend>Sở thích</legend>
+             <label><input type="checkbox" name="Sở thích" id=""></label>
+             <label> <input type="checkbox" name="Sở thích" id=""></label>
+             <label><input type="checkbox" name="" id=""></label>
+         </fieldset>
+         <label>Ghi chú</label>
+         <textarea cols="30" rows="5"></textarea>
+         <hr>
+         <button type="submit">Đăng kí</button>
+         <button type="reset">Nhập lại</button>
+    </form>
+</body>
+</html>

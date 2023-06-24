@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Thị Cẩm Vy - PS20125</title>
+    <script>
+        do{
+            var so1 = Number(prompt("Nhập số 1(nhập số): "));
+        }while(isNaN(so1)==true);
+        do{
+            var so2 = Number(prompt("Nhập số 2(nhập số):"));
+        }while(isNaN(so2)==true);
+        var pheptinh = prompt("Nhập phép tính");
+    </script>
+    <style>
+        .container{
+            width: 300px;
+            height: 50px;
+            border: 3px dashed black;
+            background: rgb(165, 216, 231);
+            border-radius: 15px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <script>
+            switch(pheptinh){
+                case '+':
+                    var kq = so1 + so2;
+                    document.write("<p>Kết quả "+ so1 +" + "+ so2 +" là: "+ kq +"</p>");
+                    break;
+                case '-':
+                    var kq = so1 - so2;
+                    document.write("<p>Kết quả "+ so1 +" - "+ so2 +" là: "+ kq +"</p>");
+                    break;
+                case '*':
+                    var kq = so1 * so2;
+                    document.write("<p>Kết quả "+ so1 +" x "+ so2 +" là: "+ kq +"</p>");
+                    break;
+                case '/':
+                    var kq = so1 / so2;
+                    document.write("<p>Kết quả "+ so1 +" / "+ so2 +" là: "+ kq +"</p>");
+                    break;
+                default:
+                    document.write("<p>"+ pheptinh +" không phải là phép tính hợp lệ</p>");
+                    break;
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

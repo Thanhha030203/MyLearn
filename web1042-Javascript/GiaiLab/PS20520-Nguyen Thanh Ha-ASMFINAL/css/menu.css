@@ -1,0 +1,110 @@
+*{ 
+    margin: 0 auto;
+}
+.container12{ 
+    width: 90%;
+    height: 1700px;
+}
+.container12 header{ 
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 40px;
+}
+a:link,:visited{ 
+    color: white;
+    text-decoration: none;
+}
+a:hover{ 
+    color: green;
+    text-decoration: none;
+}
+.container{ 
+    width: 66%;
+    height: 550px;
+    background-color: gray;
+    margin-top: 50px;
+    position: relative;
+}
+.container >header{
+    width: 93%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 3%;
+}
+#chay{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 45px;
+
+}
+#chay1{ 
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    border-radius: 45px;
+}
+header img{ 
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.chayj{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    border-radius: 45px;
+}
+.chay2{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    border-radius: 45px;
+}
+article{ 
+    width: 90%;
+    height: 1500px;
+    margin-top: 30px;
+}
+footer{ 
+    width: 90%;
+    height: 740px;
+    text-align: left;
+
+}
+.col{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    font-family: initial;
+    font-variant: initial;
+    background-color: #CAE1FF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}

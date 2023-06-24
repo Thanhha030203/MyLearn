@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT bậc 2</title>
+    <link rel="stylesheet" href="css/ptbac2.css">
+</head>
+<body>
+    <div class="container">
+        <h3>GIẢI PHƯƠNG TRÌNH ax<sup>2</sup> + bx + c (a≠0)</h3>
+        <p id="top">Số lần giải: <span id="slg" style="color: yellow;"></span></p>
+        <hr><br>
+        <p id="nhap">
+            <span>Nhập số a: </span><input type="text" id="soA" pattern="[1,10]" title="nhập sai"><br><br>
+            <span>Nhập số b: </span><input type="text" id="soB"><br><br>
+            <span>Nhập số c: </span><input type="text" id="soC"><br><br>
+        </p>
+        <input id="thuchien1" type="button" value="Giải PT" onclick="ptbac2()" disabled>
+        <input id="thuchien2" type="button" value="Cho số" onclick="choso()">
+        <div id="ketqua">
+            <span id="kq"></span>
+        </div>
+        <p id="bot">Bây giờ là: <span id="homnay"></span></p>
+    </div>
+    <script src="js/bai1.js"></script>
+</body>
+</html>

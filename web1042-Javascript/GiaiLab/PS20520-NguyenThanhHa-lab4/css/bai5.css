@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{ 
+    width: 450px;
+    height: 490px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px inset black;
+}
+h3{ 
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: lightslategrey;
+    color: white;
+}
+img{
+    width: 86%;
+    height: 85%;
+    margin-top: 7%;
+    border: 5px outset white;
+
+}
+.box{ 
+    margin-top: 20px;
+    width: 90%;
+    height: 400px;
+    background-color: lightslategrey;
+
+}

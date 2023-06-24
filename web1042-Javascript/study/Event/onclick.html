@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cotainer">
+        <div class="row">
+            <form action="">
+               <!-- <input type="button" name="" value="1"  onclick="nhan('1')" id="num1"> -->
+               <input type="button" onclick="nhan('1')" name="" class="num" value="1">
+                <button value="2" onclick="nhan('2')" class="num">2</button>
+                <button value="3" onclick="nhan('3')" class="num">3</button> <br>
+                <button value="4" onclick="nhan('4')" class="num">4</button>
+                <button value="5" onclick="nhan('5')" class="num">5</button>
+                <button value="6" onclick="nhan('6')" class="num">6</button> <br>
+                <button value="7" onclick="nhan('7')" class="num">7</button>
+                <button value="8" onclick="nhan('8')" class="num">8</button>
+                <button value="9" onclick="nhan('9')" class="num">9</button> <br>
+                <button value="0" onclick="nhan('0')" class="num">0</button>
+                <button value="ac" onclick="nhan('ac')"class="num">ac</button>
+                <button value="=" onclick="nhan('=')" class="num">=</button> <br>
+                <button value="x" onclick="nhan('x')" class="num">x</button>
+                <button value="+" onclick="nhan('+')" class="num">+</button>
+                <button value="-" onclick="nhan('-')" class="num">-</button>
+            </form>
+            <div> <input type="text" name="" id="tong">
+           </div>
+        </div>
+    </div>
+    <script>
+        function nhan(gtr){ 
+            if(gtr ==="1"){ 
+                var num = document.getElementsByClassName('num');
+                var tong = document.getElementById('tong');
+                var kq = Number(num.value);
+                tong.value = kq;
+            
+            
+        }
+        // function nhan(gtr){
+        // //   var  gtr = Number(gtr.value);
+
+        //     // if(gtr=="1"){ 
+        //     //     var bien = document.getElementsByClassName(gtr).innerHTML= gtr;
+        //     // }
+        //     // var tong = document.getElementById('tong');
+        //     // var kq = bien.value;
+        //     // tong.innerHTML = kq;
+
+        //  switch(Number(gtr)){ 
+        //      case 1: {
+        //          alert("Bạn đã nhấn phím số 1");
+        //          break;
+        //      }
+        //      case 2: {
+        //          alert("Bạn đã nhấn phím số 2");
+        //          break;
+        //      }
+        //      case 3: {
+        //          alert("Bạn đã nhấn phím số 3");
+        //          break;
+        //      }
+        //      case 4: {
+        //          alert("Bạn đã nhấn phím số 4");
+        //          break;
+        //      }
+        //      case 5: {
+        //          alert("Bạn đã nhấn phím số 5");
+        //          break;
+        //      }
+        //      case 6: {
+        //          alert("Bạn đã nhấn phím số 6");
+        //          break;
+        //      }
+        //      case 7: {
+        //          alert("Bạn đã nhấn phím số 7");
+        //          break;
+        //      }
+        //      case 8: {
+        //          alert("Bạn đã nhấn phím số 8");
+        //          break;
+        //      }
+        //      case 9: {
+        //          alert("Bạn đã nhấn phím số 9");
+        //          break;
+        //      }
+        //  }
+        // }
+    </script>
+</body>
+</html>

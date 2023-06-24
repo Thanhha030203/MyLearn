@@ -1,0 +1,27 @@
+*{
+    margin: 0px auto;
+}
+.container{
+    width: 840px;
+    height: 25px;
+    background-color: dimgray;
+    border: 1px solid darkgray;
+    padding:30px;
+    border-radius: 5px;
+    margin: auto;
+}
+.container span {
+    background-color:white;
+    border-radius: 60%;
+    color:black;
+    margin: 10px;
+    padding: 20px ;
+
+}
+h1{
+    text-align: center;
+    color:black;
+    text-shadow: 2px 3px 2px gray;
+    margin: 50px 0 20px 0;
+    padding: 30px;
+}

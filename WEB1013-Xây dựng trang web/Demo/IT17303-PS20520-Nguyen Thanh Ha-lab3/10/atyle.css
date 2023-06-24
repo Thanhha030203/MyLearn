@@ -1,0 +1,27 @@
+input:focus{ 
+    background-color: yellow;
+    outline: none;
+    box-shadow: 0 0 2px rebeccapurple;
+}
+input{ 
+    outline: none;
+}
+label{ 
+    margin-left: 10px;
+}
+.control{ 
+    width: 300px;
+    margin: 10px;
+    height: 30px;
+    padding-left: 10px;
+}fieldset{ 
+    width: 290px;
+    height: 50px;
+}
+button{ 
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px green;
+}

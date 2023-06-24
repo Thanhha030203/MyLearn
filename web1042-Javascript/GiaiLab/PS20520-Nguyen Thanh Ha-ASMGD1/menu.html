@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/bai1.css">
+    <link rel="stylesheet" href="css/bai4.css">
+    <link rel="stylesheet" href="css/bai3.css">
+</head>
+<body>
+    <div class="container12">
+        <header>
+            <img id="chayanh" src="hoa1.jpg">
+           <button onclick="prev()" id="chay" ><<</button>
+           <button  onclick="next()" id="chay1">>></button>
+           <button onclick="play()" class="chayj">play</button>
+           <button  onclick="stop()" class="chay2">stop</button>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="bai1.html">Giải phương trình</a></li>
+            <li><a href="bai2.html">SlideShow</a></li>
+            <li><a href="bai32.html">Bán hàng</a></li>
+            <li><a href="bai4.html">Form đăng ký</a></li></ul>
+        </nav>
+        <article>
+            <div class="col"><p>GIẢI PHƯƠNG TRÌNH</p></div>
+            <div class="container3">
+                <h4>GIẢI PHƯƠNG TRÌNH BẬC 2</h4>
+                <p>Số lần giải phương trình <span id="solan"></span></p>
+                <label for="" style="font-size: 20px; color: red;">ax<sup>2</sup>+ bx +c=0</label> <br>
+                <input class="form-control" tabindex="1" type="text" name="" id="a" placeholder="Nhập số a "> <br>
+                <input class="form-control" tabindex="2" type="text" name="" id="b" placeholder="Nhập số b "> <br>
+                <input class="form-control" tabindex="3" onkeypress="Nhap()" type="text" name="" id="c" placeholder="Nhập số c "> <br>
+                <input class="but" type="button" value="Nhấn để hiện thị kết quả"
+                    onclick="phuongTrinh()" name="" id="delta" disabled>
+                <input class="but" type="button" name="" value="Chạy số ngẫu nhiên" onclick="ngaunhien()" id="chayngaunhien">
+                <br>
+                <input class="form-control1" type="button" name="" id="ketqua" value="Hiển thị kết quả tại đây">
+                <p>Thời gian hiện tại : <span id="thoigian"></span></p>
+                
+            </div>
+           <div>
+            <div class="col"><p>CHƯƠNG TRÌNH MUA HÀNG</p></div>
+            </div>
+            <div class="container5" id="menu">
+                <div class="sta">
+                    <h2>BÁN HÀNG</h2>
+                    <form action="" style="margin-top: 20px;">
+                        <select onchange="mucgia()" id="chongia">
+                            <option hidden>Mức giá</option>
+                            <option value=" -1">0</option>
+                            <option value="200">200</option>
+                            <option value="400">400</option>
+                            <option value="600">600</option>
+                            <option value="800">800</option>
+                        </select>
+                    </form>
+                </div>
+                <div id="dongho"></div>
+                <hr>
+                <table style="margin-top: 20px;">
+                    <tr>
+                        <th style="height:30px" colspan="2">Hàng hoá</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)" ></td>
+                        <td>Iphone 9</td>
+                        <td class="gia">700</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled> </td>
+                        <td id="tien" class="lay" ><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)"></td>
+                        <td>SamSung</td>
+                        <td class="gia">400</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        </td>
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)"></td>
+                        <td>Nokia</td>
+                        <td class="gia">100</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        </td>
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)" ></td>
+                        <td>Sony Xperia</td>
+                        <td class="gia">450</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        </td>
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)"></td>
+                        <td>Motorola</td>
+                        <td class="gia">180</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        <!-- </td> -->
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)" ></td>
+                        <td class=>Oppo</td>
+                        <td class="gia">600</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        </td>
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr>
+                        <td class="chay"><input type="checkbox" name="chon" id="" onclick="thaydoi(this)" ></td>
+                        <td class="ip">Bphone</td>
+                        <td class="gia">90</td>
+                        <td><input class="form-control5" class="soluong" type="text" name="" id="" disabled>
+                        </td>
+                        <td id="tien" class="lay"><button onclick="them(this)" disabled>THÊM</button></td>
+                    </tr>
+                    <tr style="background-color:	#828282 ;">
+                        <td style="height: 40px;" colspan="4">Tổng</td>
+                        <td id="tongtien">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table id="giohang"></table>
+            </div>
+            <div style="margin-left: 40%; margin-top: 30px;">
+                <button class="eooi" onclick="gio()" id="an1">Giỏ hang</button>
+                <button class="eooi"  onclick="muahang()" id="an">Mua Hàng</button>
+                <button class="eooi"  onclick="quaylai()" id="an2">Quay lại</button> 
+                <button class="eooi"  onclick="chotdon()" id="an3">OK</button>
+                <button class="eooi"  onclick="xoaall()" id="an4">Xoá tất cả</button>
+                <button class="eooi"  onclick="bill()" id="return">quay về hoá đớn</button>
+                <button class="eooi"  onclick="danhgiasp()" id="an5">Đánh giá</button>
+            </div>
+            <div id="cart"></div>
+            <div id="tongphaichi"></div> 
+            <div id="ket"></div>
+           </div>
+        </article>
+    </div>
+    <footer>
+        <div class="col" style="margin-top: 100px;"><p>FORM ĐĂNG KÝ</p></div>
+        <div class="container4">
+            <h4>ĐĂNG KÝ THÀNH VÊN</h4>
+            <form action="">
+                <label for="">Mã sinh viên</label> <br>
+                <input class="form-control4" type="text" name="" id=""> <br>
+                <label for="">Họ và tên</label> <br>
+                <input class="form-control4" type="text" name="" id=""> <br>
+                <label for="">Email</label> <br>
+                <input class="form-control4" type="text" name="" id=""> <br>
+                <label for="">Giới tính</label> <br>
+               <fieldset class="form-control4
+               ">
+                <input type="radio" name="gioitinh" id="">
+                <label for="">Nam</label>
+                <input type="radio" name="gioitinh" id="">
+                <label for="">Nữ</label> <br>
+               </fieldset>
+                <label for="">Sở thích</label> <br>
+                    <fieldset class="form-control4">
+                    <input type="checkbox" name="" id=""> 
+                    <label for="">Đọc sách</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Du lịch</label>
+                    <input type="checkbox" name="" id=""> 
+                    <label for="">Ẩm thực</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Âm nhạc</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Khác</label> <br>
+                    </fieldset>
+                    <label for="">Quốc tịch</label> <br>
+                    <input class="form-control4" list = browser type="text" name="" id="" placeholder="Quốc tịch">
+                    <datalist id="browser">
+                        <option value="Việt Nam"></option>
+                        <option value="Hoa Kỳ"></option>
+                        <option value="Trung Quốc"></option>
+                        <option value="Thái Lan"></option>
+                        <option value="Indonesia"></option>
+                        <option value="Pháp"></option>
+                    </datalist> <br>
+                    <label for="">Ghi chú</label> <br>
+                    <textarea style="margin-left: 15px;" name="" id="" cols="50" rows="5" placeholder="Ghi chú"></textarea>
+                     <br><button class="control4" type="submit">Đăng Ký</button>
+            </form>
+        </div>  
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/Bai1.js"></script>
+    <script src="js/bai32.js"></script>
+</body>
+</html>

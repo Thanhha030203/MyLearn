@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/bai4.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+            <p>
+                <label for="">Mã sinh viên</label><br>
+                <input id="masv" type="text" onclick="kiemtra1()">
+                <div id="kq1"></div>
+            </p>
+            <p>
+                <label for="">Họ và tên</label><br>
+                <input id="hoten" type="text" onclick="kiemtra2()">
+                <div id="kq2"></div>
+            </p>
+            <p>
+                <label for="">Email</label><br>
+                <input id="email" type="text" onclick="kiemtra3()">
+                <div id="kq3"></div>
+            </p>
+            <p>
+                <label for="">Giới tính</label><br>
+                <input type="radio" name="gioitinh" onclick="kiemtra4()">Nam
+                <input type="radio" name="gioitinh" onclick="kiemtra4()">Nữ
+                <div id="kq4"></div>
+            </p>
+            <p>
+                <label for="">Sở thích</label><br>
+                <input type="checkbox" name="sothich">Đọc sách
+                <input type="checkbox" name="sothich">Du lịch
+                <input type="checkbox" name="sothich">Ẩm thực
+                <input type="checkbox" name="sothich">Âm nhạc
+                <input type="checkbox" name="sothich">Khác
+                <div id="kq5"></div>
+            </p>
+            <p>
+                <label for="">Quốc tịch</label><br>
+                <select id="quoctich">
+                    <option value="0">Chọn quốc tịch</option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">Trung Quốc</option>
+                </select>
+                <div id="kq6"></div>
+            </p>
+            <p>
+                <label for="">Ghi chú</label><br>
+                <textarea name="ghichu" cols="30" rows="4"></textarea>
+            </p>
+            <button onclick="return kiemtra()">Đăng kí</button>
+        </form>
+    </div>
+    <script src="js/bai4.js"></script>
+</body>
+</html>

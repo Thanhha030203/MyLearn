@@ -1,0 +1,36 @@
+table{ 
+    border-collapse: collapse;
+    
+}
+td:nth-child(2n+1){ 
+    width: 70px;
+    text-align: center;
+    border-color: yellow;
+}
+td:nth-child(2n){ 
+    width: 150px;
+    text-align: center;
+    border-color: yellow;
+}
+tr{ 
+    height: 30px;
+    border-color: green;
+}
+tr:first-child{ 
+    background-color: greenyellow;
+    color:black;
+}
+tr:nth-child(2){ 
+background-color: blue;
+font-weight: bold;
+
+}
+tr:nth-child(3) td:nth-child(2){
+    color: red; 
+    font-weight: bold;
+
+}
+tr:nth-child(3) td:nth-child(5){ 
+    color: royalblue;
+    font-weight: bold;
+}

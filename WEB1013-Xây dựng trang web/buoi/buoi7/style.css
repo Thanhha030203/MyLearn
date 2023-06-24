@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+.hmenu{
+    list-style: none;
+
+}
+.hmenu>li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.hmenu>li>a:hover{
+    color: cadetblue;
+}
+.hmenu>li:hover .upmenu{
+    display: block ;
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.upmenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    border-bottom: 1px solid  blue;
+   
+}
+.upmenu>li{
+    display: block;
+    background-color: lawngreen;
+    border-bottom: 1px blue;
+    width: 100px;
+}
+.upmenu>li:hover{
+    background-color: rgb(204, 35, 35);
+   
+}
+.upmenu>li>a{
+    color: white;
+} 
+

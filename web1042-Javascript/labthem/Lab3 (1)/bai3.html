@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Thị Cẩm Vy - PS20125</title>
+    <link rel="stylesheet" href="css/bai3.css">
+</head>
+<body>
+    <h2>MÁY TÍNH JAVASCRIPT</h2>
+    <h3>Tác giả: Phạm Thị Cẩm Vy</h3>
+    <table class="container" align="center">
+        <tr>
+            <td><button onclick="ganso(7)">7</button></td>
+            <td><button onclick="ganso(8)">8</button></td>
+            <td><button onclick="ganso(9)">9</button></td>
+            <td><button onclick="ganpheptinh('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="ganso(4)">4</button></td>
+            <td><button onclick="ganso(5)">5</button></td>
+            <td><button onclick="ganso(6)">6</button></td>
+            <td><button onclick="ganpheptinh('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="ganso(1)">1</button></td>
+            <td><button onclick="ganso(2)">2</button></td>
+            <td><button onclick="ganso(3)">3</button></td>
+            <td><button onclick="ganpheptinh('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="ganso(0)">0</button></td>
+            <td><button onclick="lamlai()">C</button></td>
+            <td><button onclick="thuchien()">=</button></td>
+            <td><button onclick="ganpheptinh('/')">:</button></td>
+        </tr> 
+        <tr align="center">
+            <td class="KQ"><span id="So1"></span></td>
+            <td class="KQ"><span id="pheptinh"></span></td>
+            <td class="KQ"><span id="So2"></span></td>
+            <td class="KQ"><span id="result"></span></td>
+        </tr>
+    </table>
+    <script src="js/bai3.js"></script>
+</body>
+</html>

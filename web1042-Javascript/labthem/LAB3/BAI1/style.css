@@ -1,0 +1,19 @@
+*{
+    margin: 20px auto;
+    
+}
+.box{
+    background-color: white;
+    width: 350px;
+    height: 130px;
+    border:1px solid red;
+    text-align: center;
+    box-shadow: 10px 10px rgb(157, 210, 235);
+}
+.box #demo{
+    background-color: rgb(140, 225, 240);
+    text-align: center;
+    margin-top: 0px;
+    height: 40px;
+    line-height: 40px;
+}

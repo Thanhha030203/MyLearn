@@ -1,0 +1,58 @@
+/* body{
+    background: linear-gradient(-90deg, rgb(62, 158, 196), rgb(178, 226, 163));
+} */
+.container{
+    margin: 0 auto;
+    width: 700px;
+    height: 520px;
+    background: rgb(218, 229, 235);
+    text-align: center;
+    border: 4px double rgb(154, 219, 129);
+}
+h2{
+    padding-top: 12px;
+    font-size: 30px;
+    color: rgb(71, 147, 45);
+}
+select{
+    background: rgb(189, 189, 223);
+}
+hr{
+    margin: 15px 20px 20px 20px;
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    width: 120px;
+    height: 30px;
+}
+tr:nth-child(2n+1){
+    background: rgb(214, 230, 207);
+}
+tr:nth-child(2n){
+    background: rgb(140, 183, 214);
+}
+tr:first-child{
+    background: rgb(173, 237, 168);
+}
+tr:last-child{
+    background: rgb(173, 237, 168);
+}
+input{
+    text-align: center;
+    width: 35px;
+    border: none;
+}
+#xacnhan{
+    width: 90px;
+    height: 24px;
+    text-align: center;
+    margin-left: calc(100% - 125px);
+    background: rgb(48, 36, 36);
+    color: white;
+    padding-top: 4px;
+}
+#xacnhan:hover{
+    border: 3px solid rgb(86, 184, 112);
+}

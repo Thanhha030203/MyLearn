@@ -1,0 +1,31 @@
+.boxcenter{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #999
+}
+nav{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #999;
+}
+.boxmain{
+    width: 100%;
+    border: 1px solid #999;
+
+}
+footer{
+    width: ;
+}
+.arr{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #999;
+    background-color: pink;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}

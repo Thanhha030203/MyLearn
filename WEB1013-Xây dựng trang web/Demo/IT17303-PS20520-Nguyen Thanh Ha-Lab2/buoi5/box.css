@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.contanier{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    background-color: aquamarine;
+    
+}
+.box50{
+    width:calc(50% - 10px);
+    float: left;
+    height: 100px;
+    background-color: rgb(62, 62, 143);
+    margin-top :50px;
+    border: 5px solid rgb(168, 59, 59);
+    border-radius: 20px;
+    box-shadow:inset 0px 0px 50px yellow;
+}
+    .mr{
+    margin-right: 20px;
+}

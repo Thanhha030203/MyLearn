@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+.hmenu{
+    list-style: none;
+
+}
+.hmenu>li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+h.hmenu>li>a:hover{
+    color: cadetblue;
+}
+.hmenu>li:hover .upmenu{
+    display: block ;
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.upmenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    border-bottom: 1px solid  blue;
+   
+}
+.upmenu>li{
+    display: block;
+    background-color: lawngreen;
+    border-bottom: 1px blue;
+    width: 100px;
+    color: black;
+}
+.upmenu>li:hover{
+    background-color: rgb(204, 35, 35);
+   
+}
+.upmenu>li>a{
+    color: white;
+} 
+.hmneu a:hover{
+    color: red;
+    background-color: lightsalmon;
+}
+.box{
+    margin: 50px;
+    top: 100px;
+    width: 250px;
+    height: 250px;
+    background: -o-linear-gradient(to right rgb(177, 97, 110),rgb(212, 20, 20));
+}
+.img:hover{
+    transition: all 0.5s;
+    background: linear-gradient(to right rgb(196, 91, 91),red );
+}
+.img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.img>img{
+    width: 100%;
+    height: auto;
+}
+img:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotate(45deg);
+}
+.danhmuc{
+    text-align: center;
+    line-height: 2%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 60px;
+}
+.danhmuc::before{
+    content: " ";
+    width: 300px;
+    height: 2px;
+    
+    background-color: brown;
+    position: absolute;
+    left: 100px;
+    top: 50px
+}
+.bf{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}

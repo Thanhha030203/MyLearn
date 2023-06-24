@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Thị Cẩm Vy - pS20125</title>
+    <script>
+        var f0 = Number(prompt("Nhập f0"));
+        var f1 = Number(prompt("Nhập f1"));
+        var n = Number(prompt("Nhập số lần"))
+        if(isNaN(f0)==true){
+            f0 = 1;
+        }
+        if(isNaN(f1)==true){
+            f1 = 2;
+        }
+    </script>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dãy FIBONACY</h2>
+        <div id="than">
+            <script>
+                for(var i=0;i<n;i++){
+                    var f = f0 + f1;
+                    f0 = f1;
+                    f1 = f;
+                    document.write("<span>"+ f +"</span>");
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

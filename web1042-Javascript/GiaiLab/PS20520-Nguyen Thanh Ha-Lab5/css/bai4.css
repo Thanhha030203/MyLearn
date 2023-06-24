@@ -1,0 +1,72 @@
+*{ 
+    margin: 0 auto;
+}
+.abc{ 
+    width: 30%;
+    height: 130px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 60px;
+    float: right;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    border: 3px inset black;
+}
+.xyz{
+    width: 38%;
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 80px;
+    float: right;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 3px inset white;
+    color: white;
+}
+.container{ 
+    width: 400px;
+    height: 350px;
+    background-color: gray;
+    margin-top: 50px;
+    border: 10px dashed gray;
+    border-radius: 5px;
+}
+.col
+{ 
+    width: 47%;
+    height:calc(100%-50px);
+    float: left;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+}
+h3{
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+    line-height: 50px;
+    text-align: center;
+}
+input,button{ 
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: lightcyan;
+    margin-right: 10px;
+
+}
+button{
+    width: 70px;
+    border-radius: 10px;
+    height: 25px;
+}
+button:hover{
+    background-color: yellowgreen;
+}

@@ -1,0 +1,32 @@
+*{ 
+    margin: 0 auto
+}
+.container{ 
+    width: 400px;
+    height: 360px;
+    background-color: #CAE1FF;
+    outline-style: inset;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.form-control{
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px inset green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+h2{ 
+    background-color: #A2B5CD;
+    height: 50px;
+    line-height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form-control:hover{ 
+    background-color: linen;
+}

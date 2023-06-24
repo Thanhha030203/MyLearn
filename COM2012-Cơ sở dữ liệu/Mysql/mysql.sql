@@ -1,0 +1,1 @@
+SELECT * FROM lab3.nhanvien;

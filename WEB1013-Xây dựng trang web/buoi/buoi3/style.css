@@ -1,0 +1,13 @@
+img{float: left;margin-right: 10px; margin-bottom: 10px;}
+a{
+    font-size: 20px; font-weight: bold; text-decoration: none;
+}
+a:link{ color: chocolate;}
+a:hover{
+    color:darkblue;
+}
+hr{clear: both;}
+.maudo{
+    color: red ;font-size: 50px;font-size: initial;text-shadow: 5px 10px 5px yellow;
+}
+.mauxanh{color: blue; line-height: 1.3;}

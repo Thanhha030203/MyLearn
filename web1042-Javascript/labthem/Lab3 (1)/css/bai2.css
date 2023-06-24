@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+    color: rgb(250, 220, 50);
+}
+#than{
+    height: 35px;
+    width: 70%;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 15%;
+    background: rgb(153, 239, 241);
+}
+span{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgb(63, 148, 70);
+    background: rgb(116, 211, 124);
+    border-radius: 20px;
+}

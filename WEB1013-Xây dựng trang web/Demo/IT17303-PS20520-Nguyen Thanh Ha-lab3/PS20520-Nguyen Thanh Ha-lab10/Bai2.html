@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20520-Bai2 </title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="">HỌ VÀ TÊN</label> <br>
+            <input class="form-control" type="text" name="" id="">
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Giới tính</legend>
+                <label> <input type="radio" name="gioitinh" id="">NAM</label>
+                <label> <input type="radio" name="gioitinh" id="">Nữ</label>
+            </fieldset>
+            <label for="">NGÀY SINH</label> <br>
+            <input class="form-control" type="date" name="" id="">
+        </div>
+        <div class="form-group">
+            <label for="">ĐIỂM</label> <br>
+            <input class="form-control" type="number" min="0" max="10" step="0.25" name="" id="">
+        </div>
+        <div class="form-group">
+            <label for="">NGHỀ NGHIỆP</label> <br>
+            <input class="form-control" list="browser" />
+            <datalist id = browser  >
+                <option value="Giáo Viên"></option>
+                <option value="Bác Sĩ"></option>
+                <option value="Kỹ Sư"></option>
+                <option value="Công Nhân"></option>
+                <option value="Nông"></option>
+            </datalist>
+        </div>
+        <div class="form-control">
+            <fieldset>
+                <legend>Sở thích</legend>
+                <label class="form-group"> <input type="checkbox" name="" id=""> THỂ THAO</label>
+                <label> <input type="checkbox" name="" id=""> DU LỊCH</label>
+                <label> <input type="checkbox" name="" id=""> ÂM NHẠC</label>
+                <label> <input type="checkbox" name="" id=""> ẨM THỰC</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="">GHI CHÚ</label> <br>
+            <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+        </div>
+        <hr>
+        <div>
+            <button class="form-button"> Đăng ký </button>
+            <button class="form-button" >Nhập lại</button>
+        </div>
+    </form>
+</body>
+</html>

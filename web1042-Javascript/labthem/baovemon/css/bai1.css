@@ -1,0 +1,125 @@
+body{
+    background: rgb(239, 237, 237);
+}
+.container{
+    
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    background: white;
+}
+.nen{
+    width: 40%;
+    float: left;
+    height: 100%;
+margin-left: 5%;
+text-align: center;
+border: 3px solid black;
+}
+.nen img{ 
+    margin-top: 10px;
+}
+.num{
+    width: 70%;
+    height: 60%;
+}
+#top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#top img{
+    width: 100%;
+    height: 300px;
+   
+}
+#pre1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    color: black;
+    top: 135px;
+    left: 0px;
+    background: none;
+}
+#next1{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 999;
+    border: none;
+    color: black;
+    top: 135px;
+    right: 0px;
+    background: none;
+}
+#play1{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border: none;
+    top: 280px;
+    font-size: 15px;
+    left: calc(50% - 65px);
+    z-index: 999;
+    background: none;
+    color: black;
+}
+#stop1{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    font-size: 15px;
+    border: none;
+    top: 280px;
+    left: calc(50% + 15px);
+    z-index: 999;
+    background: none;
+    color: black;
+}
+#next1:hover, #pre1:hover, #play1:hover, #stop1:hover{
+    border: 2px solid yellow;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 108, 30);
+    font-size: large;
+}
+ul{
+    margin-left: 410px;
+}
+li{
+    float: left;
+    list-style-type: none;
+    margin-left: 50px;
+    font-weight: 700;
+    font-style: unset;
+    
+}
+a:hover{
+    color: red;
+    transform: scale(2sxd);
+}
+#menu{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: rgb(158, 188, 233);
+}
+.boxmain{ 
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+iframe{
+    width: 100%;
+    height: 630px;
+}
+#webcon{
+    background-image: url(../img/nen.jpg);
+    background-size: 100%;
+}

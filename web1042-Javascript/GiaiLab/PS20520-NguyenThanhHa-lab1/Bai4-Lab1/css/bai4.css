@@ -1,0 +1,23 @@
+*{ 
+    margin: 20px auto;
+}
+.box{
+    border: thin solid orangered;
+    width: 500px;
+    height: 200px;
+    text-align:left ;
+}
+.box h2{ 
+    color: indigo;
+    background-color: khaki;
+    text-align: center;
+    margin-top: 0px;
+    height: 50px;
+    line-height: 50px;
+}
+.box p{
+    margin-left: 20px;
+}
+#hoten, #mssv, #ngaysinh{ 
+    color: green;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="form-group"> 
+                <!-- <input type="text" name="" onkeyup="onkey()" id="onkeys"> <br> Gõ tới đâu chạy tới đó -->
+                <!-- <input type="text" name="" onchange="onkey()" id="onkeys"> <br>// Gõ xong đưa chuột ra khỏi khung lick thì nó mới hiện  -->
+                <input type="text" name="" onkeypress="onkey()" id="onkeys"> <br>// xảy ra khi nhấn xong phin nhấn ohins khác hoặc enteer hoặc cách nó sẽ hiện lên
+                <!-- <input type="text" name="" onkeydown="onkey()" id="onkeys"> <br>// tương tự như onkeypress nhưng xoá tới đâu nó xoá tới đó -->
+                <!-- <input type="text" name="" onblur="onkey()" id="onkeys"> <br>// tương tự như onchange -->
+                <!-- <input type="text" name="" oncopy="onkey()" id="onkeys"> <br>// Xảy ra khi nó kích hoạt hành động sao chép -->
+                <!-- <div id="nhan"></div> -->
+                <div><input type="text" name="" id="nhan"></div>
+            </div>
+        </div>
+    </div> 
+    <script> 
+    function onkey(){ 
+        // xác định 2 thẻ id muốn lấy
+        var nhap = document.getElementById('onkeys');
+        var nhan = document.getElementById('nhan');
+        // lấy giá trị của thẻ id nhan
+       var text = nhap.value;
+       // Gán giá trị vừa laays được cho thẻ nhan, thẻ innerHTML dùng để truy xuất vô phần tử
+       // được hiểu là thẻ truy xuất vô thẻ nhan 
+       nhan.value = text;
+    }
+    </script>
+</body>
+</html>

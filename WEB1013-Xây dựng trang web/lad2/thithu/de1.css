@@ -1,0 +1,79 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.container_1{
+    width: 90%;
+    height: 500px;
+    
+    border: thin solid lightskyblue;
+    margin-top: 30px;
+    position: relative;
+}
+.container_1 >.container_2{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.container_1 >.container_2 >.col1{ 
+    width: 32%;
+    height: 50px;
+    margin-left:1% ;
+    float: left;
+    text-align: center;
+    background-color: brown;
+}
+.container_1 >.container_2 >.col1 >a:link, :visited{ 
+    color: white;
+    text-decoration: none;
+    background-color: aquamarine;
+    
+}
+.container_1 >.container_2 >.col1 >a:hover{ 
+    color: blue;
+    text-decoration: none;
+}
+.container_1 >.container_3{ 
+    width: 300px;
+    height: 30px;
+    background-color: yellow;
+    position: absolute;
+    top: 60px;
+    left: calc(49% - 300px);
+    text-align: center;
+    line-height: 30px;
+
+}
+.container_1 >.container_4{ 
+    width: 300px;
+    height: 30px;
+    background-color: yellow;
+    position: absolute;
+    top: 60px;
+    right: calc(49% - 300px);
+    text-align: center;
+    line-height: 30px;
+
+}
+.container_1 >img{
+    width: 15%;
+    height: 320px;
+    float: left;
+    margin-top: 110px;
+    
+}
+.container_1 >img:hover{ 
+    opacity: 0.6;
+}
+.container_1 >.container_6{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: yellow;
+    font: 10px;
+    text-align: center;
+}

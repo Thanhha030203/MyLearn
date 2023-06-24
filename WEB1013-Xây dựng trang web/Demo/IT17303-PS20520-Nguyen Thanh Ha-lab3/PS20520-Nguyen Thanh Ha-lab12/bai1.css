@@ -1,0 +1,17 @@
+table{ 
+    width: 80%;
+}
+tr{ 
+    height: 10px;
+}
+
+td:nth-child(1){
+    width: 15%;
+}
+td:nth-child(2){
+    width: 85%;
+}
+img{ 
+    height: 120px;
+    width: 150px;
+}

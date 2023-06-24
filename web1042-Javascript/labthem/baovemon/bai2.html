@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20125 - Phạm Thị Cẩm Vy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <body ng-app="myapp" ng-controller="f" class="text-center">
+        <form class="col-5 mx-auto border border-primary rounded p-3" name="frm1" >
+            <div class="form-group">
+              <label>Họ tên</label>
+              <input name="hoten" class="form-control" ng-model="ht" required minlength="3">
+              <span ng-if="frm1.hoten.$invalid" class="text-danger h5">Nhập họ tên từ 3 ký tự trở lên nhé</span>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input name="mail" class="form-control" ng-model="email" required type="email">
+              <span ng-if="frm1.mail.$invalid" class="text-danger h5">Nhập đúng email nhé</span>
+            
+            </div>
+            <button class="btn btn-warning" type="submit"> Xử lý </button>
+        </form>
+    </body>
+    <script>
+      var app= angular.module("myapp",[]);
+      app.controller("f",function($scope){
+        
+      })
+    </script>
+</body>
+</html>

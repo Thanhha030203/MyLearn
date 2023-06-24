@@ -1,0 +1,53 @@
+*{
+    margin: 0 auto;
+}
+h2{ 
+    width: 100%;
+    height: 50px;
+    background-color: rgb(210, 206, 219);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: black;
+    border-bottom:3px dashed rgb(95, 91, 91);
+}
+.container{ 
+    width: 400px;
+    height: 550px;
+    background-color: rgb(188, 193, 197);
+    text-align: center;
+    border-radius: 20px;
+    border: 7px inset rgb(97, 96, 99); 
+    margin-top: 100px;
+}
+img{ 
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+    
+}
+h3{ 
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+input{
+    width: 70px; 
+    height: 25px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+button{ 
+    height: 30px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+hr{ 
+    border: 4px double rgb(119, 115, 115);
+}

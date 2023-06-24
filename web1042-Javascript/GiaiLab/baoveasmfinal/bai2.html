@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my" ng-controller="ctr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20520-Nguyễn Thanh Hà</title>
+    <link rel="stylesheet" href="css/bai2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="frm1">
+            <label for="">Họ tên</label> <br>
+            <input type="text" ng-model='names' name="names" required> <br>
+            <em ng-if ="frm1.names.$invalid">This filed required</em> <br>
+            <label for="">Điện thoại</label> <br>
+            <input type="text"  name="dt" ng-model="dt" maxlength="10"  required> <br>
+            <em ng-if ="frm1.dt.$invalid">This filed required</em> <br>
+            <label for="">Email</label> <br>
+            <input type="email" required name="mail" ng-model="mail" > <br>
+            <em ng-if="frm1.mail.$invalid">This filed required</em> <br>
+            <label for="">Cơ sở</label>
+            <select name="sl" id="" ng-model="sl" required>
+                <option value="2">Hà Nội</option>
+                <option value="3">Hồ Chí Minh</option>
+                <option value="4">Đà Nẵng</option>
+                <option value="5">Cần thơ</option>
+            </select> <br>
+            <em ng-if="!sl || sl==1 ">This filed required</em> <br>
+            <button type="submit">Gửi </button>
+        </form>
+    </div>
+    <script src="js/bai2.js"></script>
+</body>
+</html>

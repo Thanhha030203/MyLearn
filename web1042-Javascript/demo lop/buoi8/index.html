@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myopen()">Mở google</button>
+    <button onclick="myclosed()">Đóng google</button>
+    <button onclick="movesp()">di chuyển</button>
+    <script>
+var w;
+function myopen(){ 
+    w = window.open("","", 'width=300px,height=300px');
+}
+function myclosed(){ 
+    w = window.close();
+}
+function movesp(){ 
+    w = window.moveTo(500,500);
+}
+
+    </script>
+</body>
+</html>

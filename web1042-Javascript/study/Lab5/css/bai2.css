@@ -1,0 +1,29 @@
+.container{
+    width: 600px;
+    margin: auto;
+    background: rgb(168, 196, 200);
+    padding: 20px;
+    font-size: 1.2em;
+    border: 3px solid rgb(128, 167, 172);
+    margin-top: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+}
+caption{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+button{
+    width: 60px;
+    height: 25px;
+}
+h3{
+    text-align: center;
+}

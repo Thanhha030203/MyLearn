@@ -1,0 +1,30 @@
+*{
+    margin: 0px auto;
+}
+nav{
+    width: 90%;
+    height: 50px;
+    background-color: orangered;
+}
+.menu>ul>li{
+    display: inline-block;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0px 10px;
+    line-height: 50px;
+}
+.menu>ul>li>a:hover{
+    color: yellow;
+}
+.menu>ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    text-align: center;
+}

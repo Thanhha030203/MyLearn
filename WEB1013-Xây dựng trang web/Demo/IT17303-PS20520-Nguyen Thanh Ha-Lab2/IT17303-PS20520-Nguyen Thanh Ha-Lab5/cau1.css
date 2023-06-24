@@ -1,0 +1,42 @@
+p>img{
+    width: 20%;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: blue;
+}
+p>img:hover{
+    box-shadow: red;
+    background-color: lightblue;
+}
+.column{
+    width: 25%;
+    float: left;
+}
+.sanpham{
+    border-radius: 10px;
+    
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid gray;
+
+}
+.sanpham .ten{
+    font-size: larger;
+    font-variant: small-caps;
+    color: blue;
+}
+.sanpham img{
+    max-width: 85%;
+}
+.sanpham .gia{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+.sanpham .gia del{
+    color: gray;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ang">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20520-Nguyen Thanh Ha</title>
+    <link rel="stylesheet" href="css/bai1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller ="thucthi">
+        <div class="hinhve">
+            <h3>THÔNG TIN SINH VIÊN</h3>
+            <img src="{{hinh}}" alt="">
+        </div>
+        <ul>
+            <li>Họ tên : <span>{{hoten}}</span></li>
+            <li>Ngày sinh : <span>{{ngaysinh}}</span></li>
+            <li>Phái : <span>{{gt}}</span></li>
+            <li>Điểm : <span>{{diem}}</span></li>
+        </ul>
+    </div>
+    <script src="js/bai1.js"></script>
+</body>
+</html>

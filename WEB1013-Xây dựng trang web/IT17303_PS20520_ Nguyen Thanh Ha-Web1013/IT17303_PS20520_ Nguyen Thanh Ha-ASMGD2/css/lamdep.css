@@ -1,0 +1,247 @@
+.container_ld{ 
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40PX;
+    font-size: 20px;
+}
+.container_ld >article{ 
+    width: 90%;
+    height: 4000px;
+
+}
+.container_ld >article >.beauty1{ 
+    width: 30%;
+    height: 500px;
+
+    float: left;
+    position: relative;
+    margin-bottom: 60px;
+}
+.container_ld >article >.beauty1 >img{ 
+    width: 100%;
+    height: 100%;
+}
+.container_ld >article >.beauty1:hover >img{ 
+    opacity: 0.6;
+}
+.container_ld >article >.beauty1 >.col2{ 
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0.5);
+    color: white;
+    line-height: 70px;
+}
+.container_ld >article >.beauty1:hover >.col2{ 
+    background: rgb(10, 190, 79);
+    background: rgb(10, 190, 79 ,0.5);
+}
+.container_ld >article >.container_3 >.col_ld{ 
+    width: 100%;
+    height: 40px;
+    background-color: violet;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.container_ld >article >.container_3 >.col1_ld{ 
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin-top: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.container_ld >article >.container_3 >.col1_ld >img{ 
+   width: 30%;
+   height: 100%;
+   float: left;
+   border-radius: 10px;
+}
+.container_ld >article >.container_3 >.col1_ld >img:hover{ 
+    opacity: 0.5;
+}
+.container_ld >article >.container_3 >.col1_ld >.box{ 
+    width: 64%;
+    height: 120px;
+    margin-top: 40px;
+    float: right;
+} 
+.container_ld >article >.container_3 >.col1_ld >.box >a:link, :visited{ 
+    color: black;
+    text-decoration: none;
+}
+.container_ld >article >.container_3 >.col1_ld >.box > a:hover{ 
+    color: white;
+    text-decoration: none;
+}
+.container_3{
+    width: 30%;
+    height: 1500px;
+    margin-top: 30px;
+    float: left;
+
+}
+article >.box2_ld{ 
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    color: white;
+}
+.box21_ld >a:link,:visited{ 
+    width: 32%;
+    height: 45px;
+    float: left;
+    text-align: center;
+    background-color: black;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.box21_ld >a:hover{ 
+    background-color: black;
+    opacity: 1.0;
+    text-decoration: none;
+    transition: 0.8s;
+}
+.container_90{
+    width: 90%;
+    height: 400px;
+
+    margin-top: 40px;
+}
+.container_90 >img{ 
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+.container_90 >img:hover{
+    opacity: 0.5;
+}
+.container_90 >.box90{
+    width: 65%;
+    height: 300px;
+    margin-top: 40px;
+    float: left;
+    text-align: left;
+    font-variant: small-caps;
+    background-color: grey;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.container_tieude{ 
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/nen.jpg);
+    background-size: 100%;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+
+    font-size: 50px;
+}
+.container_thuonghieu{
+    width: 100%;
+    height: 520px;
+    margin-top: 40px;
+}
+.container_thuonghieu >.container_trai{
+    width: 30%;
+    height: 490px;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+.container_thuonghieu >.container_trai >img{
+    width: 100%;
+    height: 100%;
+}
+.container_thuonghieu >.container_trai:hover >img{
+    opacity: 0.7;
+}
+.container_thuonghieu >.container_trai >.boxnen1{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0.5);
+    color: white;
+    line-height: 70px;
+}
+.container_thuonghieu >.container_trai:hover >.boxnen1{
+    background: rgb(10, 190, 79);
+    background: rgb(10, 190, 79 ,0.5);
+}
+.container_thuonghieu >.container_phai{
+    width: 67%;
+    height: 520px;
+    float: right;
+
+}
+.container_thuonghieu >.container_phai >.container_phai1{ 
+    width: 25%;
+    height: 250px;
+    margin-left: 35px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+.container_thuonghieu >.container_phai >.container_phai1 >img{ 
+    width: 100%;
+    height: 100%;
+}
+.container_thuonghieu >.container_phai >.container_phai1:hover >img{ 
+    opacity: 0.5;
+}
+.container_thuonghieu >.container_phai >.container_phai1 >.boxnen{ 
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: rgb(0 ,0 ,0);
+    background: rgb(0 ,0 ,0 ,0.7);
+    color: white;
+    line-height: 70px;
+
+}
+.container_thuonghieu >.container_phai >.container_phai1:hover >.boxnen{
+    background:hsl(0, 0%, 100%);
+    color: black;
+}
+footer{ 
+    width: 90%;
+    height: 250px;
+}
+footer >.ghichu{
+    width: 90%;
+    height: 200px;
+    padding-top: 10px;
+    border: 2px dotted white;
+}
+footer >.ghichu >p{
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    font-variant: small-caps;
+
+}
+footer >.ghichu >h1{
+    font-size: 25px;
+    font-family: monospace;
+    font-variant: small-caps;
+    text-align: center;
+}

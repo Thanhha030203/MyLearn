@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nhấn vào khung để thay đổi kính thước</h3>
+    <button onclick="changsize(this)">changsize</button>
+    <script>
+        function changsize(target){ 
+            target.style.width = Math.random()*100+200+"px";
+            target.style.height = Math.random()*100+200+"px";
+            // thay đổi kích thước ngẫu nhiên
+        }
+    </script>
+</body>
+</html>

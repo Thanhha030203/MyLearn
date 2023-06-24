@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="bt1" ng-controller="bt" >
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div >
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+      <div>{{time}}</div>
+      <button ng-click="count()">thoigian</button>
+      <button ng-click="countn()">thoigian1</button>
+    </div>
+    <script>
+        var app = angular.module('bt1',[]);
+     app.controller("bt",xuly);
+        app.controller('bt',dung);
+        function xuly ($scope){ 
+            $scope.time = 1;
+            $scope.count = function(){ 
+                setInterval(function(){ 
+                    if(10> $scope.time){ 
+                        $scope.time++;
+                    }
+                    else{ 
+                        $scope.time =1;
+                    }
+                    $scope.$apply();
+                },1000);
+            }
+            $scope.countn = function(){ 
+                clearInterval($scope.count);
+            }
+        }
+            // $scope.countn = function(){ 
+            //     clearInterval(xuly);
+            // }
+     
+    </script>
+  </body>
+</html>
