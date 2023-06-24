@@ -1,0 +1,154 @@
+﻿USE QLDA
+
+--BAI1LAB6
+--➢ Ràng buộc khi thêm mới nhân viên thì mức lương phải lớn hơn 15000, nếu vi phạm thì 
+--xuất thông báo “luong phải >15000’
+GO
+DROP TRIGGER IF EXISTS THEM_NV 
+GO
+CREATE TRIGGER THEM_NV ON NHANVIEN FOR INSERT 
+AS
+	IF (SELECT LUONG FROM inserted) <=15000 
+		BEGIN 
+				PRINT N'Lương phải >15000';
+				ROLLBACK TRANSACTION
+		END 
+ INSERT INTO NHANVIEN (HONV,TENLOT,TENNV,MANV,NGSINH,DCHI,PHAI,LUONG,MA_NQL,PHG)
+ VALUES (N'Nguyễn', N'Thanh', N'Hà','099','2003-02-13','A20 Tô kí',N'Nữ',12000,'005',4)
+ SELECT * FROM NHANVIEN
+
+--➢ Ràng buộc khi thêm mới nhân viên thì độ tuổi phải nằm trong khoảng 18 <= tuổi <=65.
+GO
+DROP TRIGGER IF EXISTS THEM_NV1 
+GO
+CREATE TRIGGER THEM_NV1 ON NHANVIEN FOR INSERT 
+AS
+		IF  (YEAR(GETDATE()) - (SELECT YEAR(NGSINH) FROM inserted ) ) <18 or  (YEAR(GETDATE()) - (SELECT YEAR(NGSINH) FROM inserted ) ) >  65
+			BEGIN
+					print N'Tuổi phải từ 18 đến 65 tuổi';
+					 ROLLBACK TRANSACTION
+			END 
+ INSERT INTO NHANVIEN (HONV,TENLOT,TENNV,MANV,NGSINH,DCHI,PHAI,LUONG,MA_NQL,PHG)-- THÊM THẤT BẠI
+ VALUES (N'Nguyễn', N'Thanh', N'Hà','021','2005-02-13','A20 Tô kí',N'Nữ',17000,'005',4)
+  INSERT INTO NHANVIEN (HONV,TENLOT,TENNV,MANV,NGSINH,DCHI,PHAI,LUONG,MA_NQL,PHG)-- THÊM THÀNH CÔNG
+ VALUES (N'Nguyễn', N'Thanh', N'Hà','020','2003-02-13','A20 Tô kí',N'Nữ',17000,'005',4)
+ SELECT * FROM NHANVIEN
+
+--➢ Ràng buộc khi cập nhật nhân viên thì không được cập nhật những nhân viên ở TP HCM
+GO
+DROP TRIGGER IF EXISTS cap_nhat
+go
+CREATE TRIGGER cap_nhat ON NHANVIEN FOR UPDATE
+AS
+IF (SELECT DCHI FROM deleted) like '%TP HCM'
+		BEGIN
+				print N'Không được cập nhật nhân viên từ tp hcm';
+				ROLLBACK TRANSACTION
+		END 
+UPDATE NHANVIEN SET NGSINH = '2000-12-28' WHERE MANV = '005' ;
+ SELECT * FROM NHANVIEN
+
+ --BAI2LAB6
+-- ➢ Hiển thị tổng số lượng nhân viên nữ, tổng số lượng nhân viên nam mỗi khi có hành động thêm mới nhân viên.
+DROP TRIGGER IF EXISTS count_phai;
+GO
+CREATE TRIGGER count_phai on NHANVIEN AFTER INSERT
+AS
+BEGIN
+SELECT COUNT(PHAI)as 'Tổng số nữ' FROM NHANVIEN WHERE PHAI like N'%Nữ%';
+SELECT COUNT(PHAI)as 'Tổng số nam' FROM NHANVIEN WHERE PHAI like N'%Nam%';
+end;
+ INSERT INTO NHANVIEN (HONV,TENLOT,TENNV,MANV,NGSINH,DCHI,PHAI,LUONG,MA_NQL,PHG)
+ VALUES (N'Nguyễn', N'Ngọc', N'Huyền','077','2003-12-28','A20 Tô kí',N'Nữ',17000,'005',4)
+ SELECT * FROM NHANVIEN
+
+--➢ Hiển thị tổng số lượng nhân viên nữ, tổng số lượng nhân viên nam mỗi khi có hành động cập nhật phần giới tính nhân viên
+ DROP TRIGGER IF EXISTS CAPNHAT_PHAI;
+GO
+CREATE TRIGGER CAPNHAT_PHAI on NHANVIEN AFTER UPDATE
+AS
+		BEGIN
+				SELECT COUNT(PHAI)as 'Tổng số nữ' FROM NHANVIEN where  PHAI like N'%Nữ%';
+				SELECT COUNT(PHAI)as 'Tổng số Nam' FROM NHANVIEN  where   PHAI like N'%Nam%';
+		end;
+update NHANVIEN set PHAI = N'Nữ'  where MANV = '003';
+
+--➢ Hiển thị tổng số lượng đề án mà mỗi nhân viên đã làm khi có hành động xóa trên bảng 
+--DEAN
+--	DEAN
+select * from dean
+--VUI LÒNG INSERT INTO DỮ LIỆU THÊM VÀO ĐỀ ÁN TRÁNH BỊ LỖI LIÊN KẾT CÁC BẢNG
+--INSERT DỮ LIỆU DƯỚI ĐÂY
+INSERT INTO DEAN VALUES (N'Quy mô', 14,N'Đà nẵng',1)
+--SAU ĐÓ CHẠY TRIGGER DƯỚI
+DROP TRIGGER IF EXISTS TG_TONGDL
+GO
+CREATE TRIGGER TG_TONGDL ON DEAN AFTER DELETE
+AS 
+	BEGIN
+		SELECT MA_NVIEN, COUNT(MADAN)AS  'TỔNG SỐ LƯỢNG ĐỀ ÁN' FROM PHANCONG
+		GROUP BY MA_NVIEN
+	END
+DELETE FROM DEAN WHERE MADA = '14'
+
+
+--BAI3LAB6
+--➢ Xóa các thân nhân trong bảng thân nhân có liên quan khi thực hiện hành động xóa nhân viên trong bảng nhân viên. 
+DROP TRIGGER IF EXISTS XOA_THANNHAN;
+GO
+CREATE TRIGGER XOA_THANNHAN ON NHANVIEN INSTEAD OF DELETE
+AS
+		BEGIN 
+				DELETE FROM THANNHAN WHERE MA_NVIEN IN ( SELECT MANV FROM deleted);
+				DELETE  FROM NHANVIEN WHERE MA_NQL IN (SELECT MANV FROM deleted);
+				DELETE  FROM PHANCONG WHERE MA_NVIEN IN (SELECT MANV FROM deleted);
+				DELETE  FROM NHANVIEN WHERE MANV IN (SELECT MANV FROM deleted);	
+		END;
+ DELETE FROM NHANVIEN WHERE MANV = '009';
+ SELECT * FROM NHANVIEN;
+ SELECT * FROM PHANCONG;
+
+ --➢ Khi thêm một nhân viên mới thì tự động phân công cho nhân viên làm đề án có MADA là 1
+ DROP TRIGGER IF EXISTS them_nv_pc;
+ GO
+ CREATE TRIGGER them_nv_pc ON NHANVIEN INSTEAD OF INSERT
+ AS
+		 BEGIN 
+				 INSERT INTO  NHANVIEN SELECT I.HONV,I.TENLOT,I.TENNV,I.MANV,I.NGSINH,I.DCHI,I.PHAI,I.LUONG,I.MA_NQL,I.PHG FROM inserted I;
+				 INSERT INTO PHANCONG VALUES((SELECT MANV FROM inserted  ),1,2,25.7);
+		 END;
+ INSERT INTO NHANVIEN( HONV,TENLOT,TENNV,MANV,NGSINH,DCHI,PHAI,LUONG,MA_NQL,PHG) VALUES (N'Đỗ', N'Thanh',N'Long','022','1968-12-12',N'200 Lê Hồng Phong',N'Nam',37000,'005',4);
+ GO
+
+ --BÀI LÀM THÊM
+ --Viết trigger thực thi mỗi khi xóa 1 nhân viên sẽ chuyển thông tin nhân viên bị xóa vào bảng nv_delete với ngày xóa là ngày hiện hành
+ drop TABLE IF EXISTS  NV_DELETE;
+ GO
+ CREATE TABLE NV_DELETE(
+			HONV  NVARCHAR(15),
+			TENLOT NVARCHAR(15),
+			TENNV NVARCHAR(15),
+			MANV NVARCHAR(9) NOT NULL,
+			NGSINH DATE,
+			DCHI NVARCHAR(30),
+			PHAI NVARCHAR(3),
+			LUONG NUMERIC(10,2),
+			MA_NQL NVARCHAR(9),
+			PHG INT NOT NULL,
+				NGAYXOA DATE
+			);
+--VUI LÒNG XOÁ TRIGGER INSTEAD OF DELETE NÀY TRƯỚC KHI CHẠY TRIGGER INSTEAD OF DELETE DƯỚI
+DROP TRIGGER IF EXISTS XOA_THANNHAN;
+--SAU ĐÓ CHẠY ĐOẠN DƯỚI
+ DROP TRIGGER IF EXISTS nv_delete_xoa;
+ GO 
+CREATE TRIGGER nv_delete_xoa ON NHANVIEN INSTEAD OF DELETE 
+ AS
+		 BEGIN 
+				DELETE FROM THANNHAN WHERE MA_NVIEN IN ( SELECT MANV FROM deleted);
+				DELETE FROM PHANCONG WHERE MA_NVIEN IN ( SELECT MANV FROM deleted);
+				INSERT INTO NV_DELETE SELECT D.* , NGAYXOA = GETDATE() FROM deleted D;
+				DELETE FROM NHANVIEN WHERE MANV IN (SELECT MANV FROM deleted);
+		 END
+ DELETE FROM NHANVIEN WHERE MANV = '020';
+ select * from  NV_DELETE

@@ -1,0 +1,12 @@
+﻿USE QLDA;
+DROP TRIGGER IF EXISTS xoa
+GO
+create trigger xoa   on	NHANVIEN FOR DELETE
+AS
+IF   '088' in (SELECT manv FROM deleted)
+BEGIN 
+			PRINT 'Không được xoá nhân viên ở tphcm';
+			ROLLBACK TRANSACTION
+END
+  DELETE FROM NHANVIEN WHERE MANV LIKE '088';
+

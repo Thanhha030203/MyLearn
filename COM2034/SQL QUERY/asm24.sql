@@ -1,0 +1,47 @@
+﻿USE QLNHATRO_PS20520THANHHA
+DROP TRIGGER IF EXISTS insert_nhatro_trigger;
+GO
+CREATE TRIGGER insert_nhatro_trigger ON NHATRO FOR INSERT
+AS
+BEGIN
+		IF(SELECT DIENTICH FROM inserted ) <8 
+			BEGIN
+					PRINT N'Diện tích từ 8m2';
+					ROLLBACK 
+			END
+			ELSE
+			PRINT N'Thêm thành công'
+END
+SELECT * FROM NHATRO
+INSERT INTO NHATRO SELECT 'NT0112',NULL,'LN003',4,2000000,N'355 Tô Kí',N'Quận 12',N'Sạch đẹp','2022-08-06','N10LJ005'
+
+
+--42
+DROP TRIGGER IF EXISTS update_nhatro_trigger;
+GO
+CREATE TRIGGER update_nhatro_trigger ON NHATRO FOR UPDATE	
+AS
+BEGIN
+		IF(SELECT DIENTICH FROM inserted ) <8 or (select GIANHA FROM inserted) <0
+			BEGIN
+					PRINT N'Diện tích từ 8m2 vag giá nhà phải lớn hơn 0';
+					ROLLBACK 
+			END
+			ELSE
+			PRINT N'Update thành công'
+END
+
+UPDATE NHATRO SET GIANHA = -1 WHERE MANT = 'NT0102'
+
+DROP TRIGGER IF EXISTS delete_nguoidung_trigger;
+go
+CREATE TRIGGER  delete_nguoidung_trigger ON NGUOIDUNG  INSTEAD OF DELETE
+	AS 
+	BEGIN
+				DELETE FROM DANHGIA WHERE MA_NGD IN ( SELECT MA_NGD FROM deleted);
+				UPDATE NHATRO SET MA_NGLH = 'N04LH001' WHERE MA_NGLH IN ( SELECT MA_NGD FROM deleted);
+				DELETE FROM NGUOIDUNG WHERE MA_NGD IN ( SELECT MA_NGD FROM deleted);
+				PRINT N'Xoá thành công'
+	END
+
+	DELETE FROM NGUOIDUNG WHERE MA_NGD = 'N09LH001'
